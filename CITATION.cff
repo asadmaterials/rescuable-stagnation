@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "Rescuable Stagnation: Code and Data"
+type: software
+authors:
+  - family-names: "Asad"
+    given-names: "Muhammad"
+version: "1.0.0"
+repository-code: "https://github.com/asadmaterials/rescuable-stagnation"
+license: MIT
