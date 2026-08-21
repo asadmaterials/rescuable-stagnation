@@ -1,0 +1,53 @@
+# ---------------------------------------------------------------------------
+# .gitignore for the "Rescuable Stagnation" code + data repository
+# Covers both mp-benchmark/ and hea-benchmark/.
+# ---------------------------------------------------------------------------
+
+# Virtual environments (regenerable from requirements.txt; large; may leak
+# machine-specific absolute paths). Seen as .venv in both project folders.
+.venv/
+venv/
+env/
+ENV/
+
+# IDE / editor config (PyCharm .idea seen in both folders; personal, not needed)
+.idea/
+.vscode/
+*.iml
+
+# Python bytecode caches (__pycache__ seen in both folders)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# OS cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Build / packaging / test artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# ---------------------------------------------------------------------------
+# Keys are read from the environment (ANTHROPIC_API_KEY, MP_API_KEY); they must
+# never be hard-coded or committed.
+# ---------------------------------------------------------------------------
+.env
+.env.*
+*.key
+secrets.*
+credentials.*
+api_key*
+*apikey*
+

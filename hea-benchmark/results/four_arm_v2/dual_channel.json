@@ -1,0 +1,26 @@
+{
+  "digest": {
+    "n_injected": 886,
+    "mean_conf": 7.775366527719906,
+    "rf_ssh_spearman": 0.6725670565827857,
+    "ssh_valid_frac": 0.9503386004514672
+  },
+  "llm": {
+    "n_injected": 709,
+    "mean_conf": 4.911530589207093,
+    "rf_ssh_spearman": 0.6715945281738779,
+    "ssh_valid_frac": 0.9407616361071932
+  },
+  "mutation": {
+    "n_injected": 455,
+    "mean_conf": 2.3996729311938023,
+    "rf_ssh_spearman": 0.3692809664426264,
+    "ssh_valid_frac": 1.0
+  },
+  "random": {
+    "n_injected": 831,
+    "mean_conf": 7.014793934683313,
+    "rf_ssh_spearman": 0.6742275112332576,
+    "ssh_valid_frac": 0.9458483754512635
+  }
+}

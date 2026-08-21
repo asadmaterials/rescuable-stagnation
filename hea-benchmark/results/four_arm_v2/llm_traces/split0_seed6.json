@@ -1,0 +1,287 @@
+[
+  {
+    "iteration": 6,
+    "stagnation_count": 3,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "832e535d10abf909",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 9,
+    "stagnation_count": 6,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "555d198d20230ac6",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 12,
+    "stagnation_count": 9,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "36f8dae4514caef0",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 15,
+    "stagnation_count": 12,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "99fa733a17d37b86",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 18,
+    "stagnation_count": 15,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "49e7c85433a66cfc",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 21,
+    "stagnation_count": 18,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "09e5c717c9297db3",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 24,
+    "stagnation_count": 21,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "03944da477e18730",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 27,
+    "stagnation_count": 24,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "676d84ffccabc6c3",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 30,
+    "stagnation_count": 27,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "b9121348aa2b9223",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 33,
+    "stagnation_count": 30,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "f5cc7503725cc73d",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 36,
+    "stagnation_count": 33,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "962f25ee04d4a578",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 39,
+    "stagnation_count": 36,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "d8985a4b6c2f632e",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 42,
+    "stagnation_count": 39,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "05e624e2c535196e",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 45,
+    "stagnation_count": 42,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "088c6353826cd7ef",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 48,
+    "stagnation_count": 45,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "d571e285c025dcab",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  }
+]

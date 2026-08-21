@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-07-30T18:00:20.815768",
+  "run_type": "capability-comparison (LLM arm only)",
+  "model": "claude-haiku-4-5-20251001",
+  "arms": [
+    "llm"
+  ],
+  "n_splits": 5,
+  "n_bo_seeds": 7,
+  "n_initial": 8,
+  "n_iterations": 20,
+  "inject_n": 3,
+  "llm_temperature": 1.0,
+  "frozen_sampling": {
+    "temperature": 1.0,
+    "max_tokens": 2048,
+    "top_p": "API default (unset, identical both runs)",
+    "system_prompt_sha": "a22b752b8a9504f7"
+  },
+  "note": "Same oracle/admission/seeds/budget as the main run; only the model differs. All sampling params frozen identical to the baseline. Robustness comparison across two capability levels, NOT a scaling law."
+}

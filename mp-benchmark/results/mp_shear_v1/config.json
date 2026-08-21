@@ -1,0 +1,31 @@
+{
+  "timestamp": "2026-07-29T12:51:52.167021",
+  "benchmark": "Materials Project shear modulus (metallic, >=3 elem)",
+  "objective": "maximize shear modulus G (GPa)",
+  "arms": [
+    "none",
+    "random",
+    "mutation",
+    "digest",
+    "llm"
+  ],
+  "n_splits": 5,
+  "n_bo_seeds": 7,
+  "n_initial": 8,
+  "n_iterations": 20,
+  "inject_n": 3,
+  "llm_oversample": 4,
+  "stagnation_window": 5,
+  "stagnation_thresh": 0.02,
+  "inject_cooldown": 3,
+  "llm_model": "claude-sonnet-4-6",
+  "llm_temperature": 1.0,
+  "llm_max_tokens": 2048,
+  "n_compositions": 1827,
+  "n_elements": 59,
+  "gp_fit": "uncapped (fit_gpytorch_mll to convergence)",
+  "admission_rule": "distance-bounded: Euclidean-to-nearest-train in scaled Magpie space <= 90th percentile of pool distances (recomputed PER SPLIT); then near-duplicate dedup. Pre-registered from error-vs-distance analysis (error flat within this bound).",
+  "physics_channel": "Voigt-Reuss-Hill G from elemental moduli (Channel B)",
+  "digest_rule": "PRIMARY control: shared 8-cluster digest (counts + best-G); rank by count; sample least-explored half; reads counts only, no optimization.",
+  "representation": "two parallel: Magpie vector (GP/oracle/distance) + composition dict (digest clustering, mutation)."
+}

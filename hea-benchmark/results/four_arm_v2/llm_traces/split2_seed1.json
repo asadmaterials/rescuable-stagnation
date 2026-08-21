@@ -1,0 +1,1616 @@
+[
+  {
+    "iteration": 8,
+    "stagnation_count": 5,
+    "best_hv": 748.6635833333359,
+    "audit": {
+      "prompt_hash": "5437a9b1b16cb626",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Al-Cr-Fe-Ni-Mo/Ti/Co space, which all share FCC/BCC dual-phase AlCrFeNiMo-type alloys. To escape stagnation, we should explore refractory-element-dominated HEAs (Mo, W, Ta, Nb, V with Ti/Zr) for solid-solution and carbide/boride strengthening, as well as Al-rich compositions with strong B2 ordering and intermetallic precipitate hardening from elements like W, Ta, and Re that have not been sampled. These regions are physically distinct and expected to produce higher hardness through distinct mechanisms.\",\n  \"strengthening_mechanism\": \"Primary mechanisms vary by group: (1) solid-solution strengthening + BCC lattice distortion in refractory HEAs; (2) B2/L12 ordered-phase precipitation hardening in Al-rich Ni-base systems with W/Ta/Re; (3) grain boundary and interstitial strengthening via controlled Si/C additions to refractory matrices.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Mo\": 0.25, \"W\": 0.25, \"Ta\": 0.20, \"Nb\": 0.15, \"V\": 0.15},\n      \"rationale\": \"Pure refractory BCC HEA with large atomic-size mismatch (Ta vs V) expected to maximize solid-solution strengthening and lattice distortion hardening.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.20, \"W\": 0.20, \"Ta\": 0.20, \"Ti\": 0.20, \"Nb\": 0.20},\n      \"rationale\": \"Equimolar refractory HEA combining group-V and group-VI transition metals for strong BCC solid-solution hardening and high melting-point stability.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Ni\": 0.25, \"W\": 0.20, \"Mo\": 0.15, \"Ta\": 0.15},\n      \"rationale\": \"Al-Ni base with W, Mo, Ta additions to promote B2-ordered NiAl phase precipitation within a BCC matrix, combining precipitation and solid-solution strengthening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Ni\": 0.20, \"Re\": 0.20, \"W\": 0.20, \"Mo\": 0.20},\n      \"rationale\": \"Re-containing Al-Ni HEA inspired by superalloy chemistry; Re and W provide rhenium-effect solid-solution hardening and sluggish diffusion to stabilize fine precipitates.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.22, \"Cr\": 0.18, \"Fe\": 0.18, \"Ni\": 0.18, \"W\": 0.14, \"Ta\": 0.10},\n      \"rationale\": \"Extension of the best Al-Cr-Fe-Ni region with W and Ta substituting for Mo/Ti, targeting Laves-phase and BCC precipitate hardening not yet explored.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.25, \"Nb\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"V\": 0.15},\n      \"rationale\": \"Refractory BCC HEA with Ti promoting omega-phase precipitation on aging and W/Mo for solid-solution strengthening beyond the Nb-Ti region already sampled.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Ni\": 0.20, \"Co\": 0.15, \"W\": 0.20, \"Ta\": 0.15, \"Re\": 0.10},\n      \"rationale\": \"Superalloy-inspired HEA where Co and Re stabilize FCC matrix while W and Ta drive gamma-prime (L12) and solid-solution hardening simultaneously.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.30, \"W\": 0.25, \"Si\": 0.15, \"Cr\": 0.15, \"Ti\": 0.15},\n      \"rationale\": \"Mo-W-Si system targeting formation of hard (Mo,W)5Si3 silicide intermetallic phase dispersed in BCC matrix for composite-like hardening.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Ta\": 0.20, \"Re\": 0.20},\n      \"rationale\": \"Equimolar refractory HEA incorporating Re for sluggish-diffusion effect and large misfit strengthening; entirely unexplored region combining group-V, VI, and VII metals.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Ti\": 0.20, \"Nb\": 0.20, \"Mo\": 0.20, \"W\": 0.15, \"Zr\": 0.10},\n      \"rationale\": \"Refractory-lean Al-Ti-Nb-Mo-W-Zr alloy targeting coherent B2/BCC dual-phase microstructure with Zr segregating to grain boundaries for additional boundary hardening.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"V\": 0.20, \"Ta\": 0.20},\n      \"rationale\": \"Equimolar group-VI/V refractory HEA with large elastic modulus mismatch expected to give strong Peierls-Nabarro resistance in BCC lattice and very high hardness.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.18, \"Cr\": 0.18, \"Ni\": 0.18, \"Mo\": 0.18, \"W\": 0.15, \"Re\": 0.13},\n      \"rationale\": \"Al-Cr-Ni matrix with three heavy refractory additions (Mo, W, Re) targeting multi-element solid-solution hardening synergy and suppression of soft FCC phase formation.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Al-Cr-Fe-Ni-Mo/Ti/Co space, which all share FCC/BCC dual-phase AlCrFeNiMo-type alloys. To escape stagnation, we should explore refractory-element-dominated HEAs (Mo, W, Ta, Nb, V with Ti/Zr) for solid-solution and carbide/boride strengthening, as well as Al-rich compositions with strong B2 ordering and intermetallic precipitate hardening from elements like W, Ta, and Re that have not been sampled. These regions are physically distinct and expected to produce higher hardness through distinct mechanisms.",
+    "mechanism": "Primary mechanisms vary by group: (1) solid-solution strengthening + BCC lattice distortion in refractory HEAs; (2) B2/L12 ordered-phase precipitation hardening in Al-rich Ni-base systems with W/Ta/Re; (3) grain boundary and interstitial strengthening via controlled Si/C additions to refractory matrices.",
+    "raw_candidates": [
+      {
+        "Mo": 0.25,
+        "W": 0.25,
+        "Ta": 0.2,
+        "Nb": 0.15,
+        "V": 0.15
+      },
+      {
+        "Mo": 0.2,
+        "W": 0.2,
+        "Ta": 0.2,
+        "Ti": 0.2,
+        "Nb": 0.2
+      },
+      {
+        "Al": 0.25,
+        "Ni": 0.25,
+        "W": 0.2,
+        "Mo": 0.15,
+        "Ta": 0.15
+      },
+      {
+        "Al": 0.2,
+        "Ni": 0.2,
+        "Re": 0.2,
+        "W": 0.2,
+        "Mo": 0.2
+      },
+      {
+        "Al": 0.22,
+        "Cr": 0.18,
+        "Fe": 0.18,
+        "Ni": 0.18,
+        "W": 0.14,
+        "Ta": 0.1
+      },
+      {
+        "Ti": 0.25,
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "V": 0.15
+      },
+      {
+        "Al": 0.2,
+        "Ni": 0.2,
+        "Co": 0.15,
+        "W": 0.2,
+        "Ta": 0.15,
+        "Re": 0.1
+      },
+      {
+        "Mo": 0.3,
+        "W": 0.25,
+        "Si": 0.15,
+        "Cr": 0.15,
+        "Ti": 0.15
+      },
+      {
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Ta": 0.2,
+        "Re": 0.2
+      },
+      {
+        "Al": 0.15,
+        "Ti": 0.2,
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "W": 0.15,
+        "Zr": 0.1
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "V": 0.2,
+        "Ta": 0.2
+      },
+      {
+        "Al": 0.18,
+        "Cr": 0.18,
+        "Ni": 0.18,
+        "Mo": 0.18,
+        "W": 0.15,
+        "Re": 0.13
+      }
+    ]
+  },
+  {
+    "iteration": 11,
+    "stagnation_count": 1,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "11283c21bb8669d6",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Co-Cr-Fe-Ni-based compositions with Mo and Ti/Al additions, which consistently yield ~730-750 HV but shows diminishing returns. The top compositions all share a common FCC-matrix base with moderate solid-solution hardening. To escape this basin, we should explore refractory-rich HEAs (W, Ta, Mo, Nb, Re) with significant intermetallic-forming additions (Al, Si, B), which exploit precipitation hardening of Laves/B2/L12 phases and lattice distortion from large misfit atoms, and boride/carbide-forming systems that exploit dispersion hardening.\",\n  \"strengthening_mechanism\": \"Primarily precipitation hardening via refractory intermetallic phases (Laves, B2, \u03bc-phase), combined with severe lattice distortion solid-solution strengthening from high atomic-size-mismatch refractory elements (W, Ta, Re, Mo), and dispersion hardening from in-situ boride/silicide formation.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"W\": 0.25, \"Mo\": 0.25, \"Ta\": 0.20, \"Cr\": 0.20, \"Al\": 0.10},\n      \"rationale\": \"Refractory BCC HEA with W and Ta providing severe lattice distortion; Al promotes B2 ordering for precipitation hardening on top of the BCC solid solution.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Mo\": 0.20, \"Nb\": 0.20, \"Ta\": 0.20, \"Re\": 0.10, \"Cr\": 0.10},\n      \"rationale\": \"All-refractory BCC system exploiting maximum solid-solution hardening from high melting-point elements with large atomic misfit; Re adds electron-density strengthening.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.25, \"Mo\": 0.25, \"Cr\": 0.20, \"Al\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"Ta-Mo-Cr base with Al and Si additions to form Laves-phase (TaMo)Si2-type precipitates and B2/Al-rich phases within a BCC matrix for dual precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"Nb\": 0.15, \"Al\": 0.15, \"Si\": 0.10},\n      \"rationale\": \"Refractory HEA with Si and Al additions targeting simultaneous Laves-phase and B2 precipitate formation in a heavily distorted BCC matrix.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.25, \"Mo\": 0.25, \"W\": 0.20, \"Al\": 0.20, \"Si\": 0.10},\n      \"rationale\": \"Nb-Mo-W refractory base with high Al for strong B2-NiAl analogue precipitation and Si to form silicide dispersoids; expected BCC + precipitate microstructure.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.30, \"Mo\": 0.20, \"W\": 0.20, \"Si\": 0.15, \"B\": 0.15},\n      \"rationale\": \"Cr-Mo-W matrix with high Si and B content to form hard chromium borosilicide dispersoids; boride dispersion hardening should yield very high hardness.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"Cr\": 0.25, \"W\": 0.15, \"Ta\": 0.15, \"B\": 0.10, \"Si\": 0.10},\n      \"rationale\": \"Mo-Cr-W refractory base with B and Si to generate in-situ boride and silicide hard phases; the combination targets a composite-like HEA microstructure with extreme hardness.\"\n    },\n    {\n      \"composition\": {\"Hf\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Si\": 0.20},\n      \"rationale\": \"Hf-Ta-Mo-W silicide-forming system; Hf and Ta silicides are among the hardest known intermetallics, providing dispersion and solid-solution hardening simultaneously.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.30, \"W\": 0.25, \"Re\": 0.20, \"Mo\": 0.15, \"Cr\": 0.10},\n      \"rationale\": \"Ta-rich refractory HEA with Re for maximum solid-solution hardening; Re uniquely strengthens BCC refractories through electronic interaction and reduced dislocation mobility.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.20, \"Mo\": 0.20, \"Ta\": 0.20, \"Al\": 0.20, \"B\": 0.10, \"Si\": 0.10},\n      \"rationale\": \"Nb-Mo-Ta base with Al targeting B2 precipitation and B/Si forming hard grain-boundary borosilicide phases, combining precipitation and dispersion hardening mechanisms.\"\n    },\n    {\n      \"composition\": {\"W\": 0.25, \"Cr\": 0.25, \"Ta\": 0.15, \"Mo\": 0.15, \"Al\": 0.10, \"Zr\": 0.10},\n      \"rationale\": \"W-Cr-Ta-Mo base with Zr additions to promote Zr-rich Laves phase nucleation and refine the BCC microstructure; Zr has very large atomic size mismatch for solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"W\": 0.20, \"Nb\": 0.20, \"Al\": 0.20, \"Hf\": 0.15},\n      \"rationale\": \"Mo-W-Nb refractory core with Hf (large misfit atom) and Al for B2/Laves precipitation; Hf additions in Nb-Mo alloys are known to produce significant precipitation hardening.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Co-Cr-Fe-Ni-based compositions with Mo and Ti/Al additions, which consistently yield ~730-750 HV but shows diminishing returns. The top compositions all share a common FCC-matrix base with moderate solid-solution hardening. To escape this basin, we should explore refractory-rich HEAs (W, Ta, Mo, Nb, Re) with significant intermetallic-forming additions (Al, Si, B), which exploit precipitation hardening of Laves/B2/L12 phases and lattice distortion from large misfit atoms, and boride/carbide-forming systems that exploit dispersion hardening.",
+    "mechanism": "Primarily precipitation hardening via refractory intermetallic phases (Laves, B2, \u03bc-phase), combined with severe lattice distortion solid-solution strengthening from high atomic-size-mismatch refractory elements (W, Ta, Re, Mo), and dispersion hardening from in-situ boride/silicide formation.",
+    "raw_candidates": [
+      {
+        "W": 0.25,
+        "Mo": 0.25,
+        "Ta": 0.2,
+        "Cr": 0.2,
+        "Al": 0.1
+      },
+      {
+        "W": 0.2,
+        "Mo": 0.2,
+        "Nb": 0.2,
+        "Ta": 0.2,
+        "Re": 0.1,
+        "Cr": 0.1
+      },
+      {
+        "Ta": 0.25,
+        "Mo": 0.25,
+        "Cr": 0.2,
+        "Al": 0.15,
+        "Si": 0.15
+      },
+      {
+        "W": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "Nb": 0.15,
+        "Al": 0.15,
+        "Si": 0.1
+      },
+      {
+        "Nb": 0.25,
+        "Mo": 0.25,
+        "W": 0.2,
+        "Al": 0.2,
+        "Si": 0.1
+      },
+      {
+        "Cr": 0.3,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Si": 0.15,
+        "B": 0.15
+      },
+      {
+        "Mo": 0.25,
+        "Cr": 0.25,
+        "W": 0.15,
+        "Ta": 0.15,
+        "B": 0.1,
+        "Si": 0.1
+      },
+      {
+        "Hf": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Si": 0.2
+      },
+      {
+        "Ta": 0.3,
+        "W": 0.25,
+        "Re": 0.2,
+        "Mo": 0.15,
+        "Cr": 0.1
+      },
+      {
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "Ta": 0.2,
+        "Al": 0.2,
+        "B": 0.1,
+        "Si": 0.1
+      },
+      {
+        "W": 0.25,
+        "Cr": 0.25,
+        "Ta": 0.15,
+        "Mo": 0.15,
+        "Al": 0.1,
+        "Zr": 0.1
+      },
+      {
+        "Mo": 0.25,
+        "W": 0.2,
+        "Nb": 0.2,
+        "Al": 0.2,
+        "Hf": 0.15
+      }
+    ]
+  },
+  {
+    "iteration": 14,
+    "stagnation_count": 4,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "46b2b605cb7834aa",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Co-Cr-Fe-Mo-Ni-Ti/Al systems delivering ~750 HV through solid-solution strengthening in FCC-dominated matrices. To escape this plateau, we should pivot to refractory-element-rich and intermetallic-forming systems that exploit precipitation hardening (Laves, sigma, B2, or L12 phases), solution hardening from large atomic-size-mismatch elements (W, Ta, Re, Hf, Zr), and carbide/boride precipitation. Specifically, W-Ta-Mo-Nb-based refractory HEAs and systems with deliberate Zr/Hf additions to Cr-Co-Ni matrices to trigger Laves-phase precipitation have not been explored and are predicted to surpass 750 HV.\",\n  \"strengthening_mechanism\": \"Primary: precipitation hardening via Laves, sigma, and B2 intermetallic phases combined with solid-solution strengthening from high-modulus refractory elements (W, Ta, Re) creating large lattice distortion and sluggish diffusion effects in BCC/dual-phase matrices.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"W\": 0.25, \"Ta\": 0.25, \"Mo\": 0.20, \"Cr\": 0.15, \"Nb\": 0.15},\n      \"rationale\": \"Refractory BCC HEA with very high melting-point elements W and Ta expected to give extreme solid-solution hardening and high intrinsic lattice resistance (Peierls stress) in as-cast BCC structure.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"Re\": 0.20, \"Nb\": 0.20},\n      \"rationale\": \"Equimolar refractory penta-element BCC alloy leveraging Re's solid-solution strengthening anomaly and high electron density to maximize lattice distortion hardening.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Co\": 0.25, \"Ni\": 0.20, \"Zr\": 0.15, \"Hf\": 0.15},\n      \"rationale\": \"Zr and Hf additions to Co-Cr-Ni trigger Laves-phase (C14/C15) precipitation in an FCC matrix, expected to provide strong precipitation hardening substantially above 750 HV.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.30, \"Cr\": 0.25, \"Ni\": 0.20, \"Hf\": 0.15, \"Si\": 0.10},\n      \"rationale\": \"Si promotes sigma/Cr3Si and Hf promotes HfCo2 Laves precipitation in a ductile Co-Cr-Ni FCC matrix, combining multiple intermetallic strengthening phases.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Cr\": 0.20, \"W\": 0.20, \"Ta\": 0.20, \"Mo\": 0.15},\n      \"rationale\": \"W and Ta in a Cr-Fe-Mo base introduce heavy solid-solution atoms with large size and modulus misfit expected to raise hardness through extensive BCC lattice distortion.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.30, \"Al\": 0.15, \"Co\": 0.20, \"Ta\": 0.20, \"Cr\": 0.15},\n      \"rationale\": \"Ta-rich Ni-Al-Co system expected to promote ordered L12 Ni3(Al,Ta) gamma-prime precipitation coherent with FCC matrix, analogous to superalloy precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.25, \"Al\": 0.20, \"Ti\": 0.20, \"Mo\": 0.15, \"Ta\": 0.20},\n      \"rationale\": \"Combines L12 gamma-prime forming elements (Ni, Al, Ti) with Ta and Mo for dual precipitation hardening (Ni3Al/Ni3Ti) plus solid-solution strengthening from refractory additions.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.20, \"Cr\": 0.20, \"Fe\": 0.15, \"V\": 0.20, \"W\": 0.25},\n      \"rationale\": \"High W and V content in Co-Cr-Fe base promotes BCC/sigma mixed phase formation and high solid-solution hardening from large modulus-mismatch elements.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"Nb\": 0.20, \"Si\": 0.15, \"W\": 0.25},\n      \"rationale\": \"Mo-Si-Nb silicide-forming system with W for solid-solution strengthening; expected to form hard Mo5Si3 and (Nb,Mo)Si2 intermetallic dispersoids that dramatically raise hardness.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.25, \"Zr\": 0.20, \"Hf\": 0.20, \"Nb\": 0.20, \"Mo\": 0.15},\n      \"rationale\": \"Group-IV/V refractory BCC HEA with maximum atomic-size mismatch among Ti-Zr-Hf group promoting sluggish diffusion, high lattice distortion, and solid-solution hardening in BCC.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.20, \"Cr\": 0.20, \"V\": 0.20, \"Ta\": 0.20, \"Si\": 0.20},\n      \"rationale\": \"Si promotes FeSi and CrSi2 hard silicide precipitation; Ta and V add BCC solid-solution hardening producing a dual-phase silicide-reinforced matrix expected to exceed 800 HV.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.28, \"Al\": 0.18, \"Co\": 0.18, \"Re\": 0.18, \"Cr\": 0.18},\n      \"rationale\": \"Re addition to Ni-Al-Co-Cr system is known in superalloys to retard diffusion (Re-effect) and increase gamma-prime misfit, boosting both solid-solution and precipitation hardening in as-cast state.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Co-Cr-Fe-Mo-Ni-Ti/Al systems delivering ~750 HV through solid-solution strengthening in FCC-dominated matrices. To escape this plateau, we should pivot to refractory-element-rich and intermetallic-forming systems that exploit precipitation hardening (Laves, sigma, B2, or L12 phases), solution hardening from large atomic-size-mismatch elements (W, Ta, Re, Hf, Zr), and carbide/boride precipitation. Specifically, W-Ta-Mo-Nb-based refractory HEAs and systems with deliberate Zr/Hf additions to Cr-Co-Ni matrices to trigger Laves-phase precipitation have not been explored and are predicted to surpass 750 HV.",
+    "mechanism": "Primary: precipitation hardening via Laves, sigma, and B2 intermetallic phases combined with solid-solution strengthening from high-modulus refractory elements (W, Ta, Re) creating large lattice distortion and sluggish diffusion effects in BCC/dual-phase matrices.",
+    "raw_candidates": [
+      {
+        "W": 0.25,
+        "Ta": 0.25,
+        "Mo": 0.2,
+        "Cr": 0.15,
+        "Nb": 0.15
+      },
+      {
+        "W": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "Re": 0.2,
+        "Nb": 0.2
+      },
+      {
+        "Cr": 0.25,
+        "Co": 0.25,
+        "Ni": 0.2,
+        "Zr": 0.15,
+        "Hf": 0.15
+      },
+      {
+        "Co": 0.3,
+        "Cr": 0.25,
+        "Ni": 0.2,
+        "Hf": 0.15,
+        "Si": 0.1
+      },
+      {
+        "Fe": 0.25,
+        "Cr": 0.2,
+        "W": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.15
+      },
+      {
+        "Ni": 0.3,
+        "Al": 0.15,
+        "Co": 0.2,
+        "Ta": 0.2,
+        "Cr": 0.15
+      },
+      {
+        "Ni": 0.25,
+        "Al": 0.2,
+        "Ti": 0.2,
+        "Mo": 0.15,
+        "Ta": 0.2
+      },
+      {
+        "Co": 0.2,
+        "Cr": 0.2,
+        "Fe": 0.15,
+        "V": 0.2,
+        "W": 0.25
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Nb": 0.2,
+        "Si": 0.15,
+        "W": 0.25
+      },
+      {
+        "Ti": 0.25,
+        "Zr": 0.2,
+        "Hf": 0.2,
+        "Nb": 0.2,
+        "Mo": 0.15
+      },
+      {
+        "Fe": 0.2,
+        "Cr": 0.2,
+        "V": 0.2,
+        "Ta": 0.2,
+        "Si": 0.2
+      },
+      {
+        "Ni": 0.28,
+        "Al": 0.18,
+        "Co": 0.18,
+        "Re": 0.18,
+        "Cr": 0.18
+      }
+    ]
+  },
+  {
+    "iteration": 17,
+    "stagnation_count": 7,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "79070c126f6f8e91",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar-ish compositions achieving ~750 HV, but has not explored refractory-element-dominated systems (W, Ta, Re, Nb) that can provide massive solid-solution hardening and intermetallic precipitation in BCC-dominant matrices. Additionally, boride/carbide-forming additions (B, C, Si) with refractory bases remain completely untried, yet are known to dramatically boost hardness through precipitation hardening and grain boundary strengthening. Shifting to BCC/dual-phase refractory HEAs and precipitation-strengthened systems should break the plateau.\",\n  \"strengthening_mechanism\": \"Solid-solution strengthening in BCC refractory matrices combined with intermetallic/carbide/boride precipitation hardening, supplemented by lattice distortion hardening from large atomic-size-mismatch elements (Ta, W, Hf, Zr).\",\n  \"candidates\": [\n    {\n      \"composition\": {\"W\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"Nb\": 0.20, \"Cr\": 0.20},\n      \"rationale\": \"Equimolar refractory BCC HEA with maximum lattice distortion from W, Ta, Mo, Nb, Cr; expected severe solid-solution hardening in a single-phase BCC matrix analogous to Senkov-type alloys.\"\n    },\n    {\n      \"composition\": {\"W\": 0.25, \"Mo\": 0.25, \"Ta\": 0.20, \"Nb\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"Si addition to W-Mo-Ta-Nb base promotes silicide precipitate (Mo5Si3, Nb5Si3) formation providing precipitation hardening on top of BCC solid-solution strengthening.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Mo\": 0.20, \"Ta\": 0.20, \"Cr\": 0.20, \"B\": 0.20},\n      \"rationale\": \"High boron content with refractory metals expected to form hard refractory borides (W2B, TaB2, MoB) dispersed in a BCC matrix, providing extreme precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.25, \"W\": 0.25, \"Mo\": 0.20, \"Re\": 0.15, \"Nb\": 0.15},\n      \"rationale\": \"Re addition to Ta-W-Mo-Nb provides the rhenium solid-solution strengthening effect known from superalloys, further increasing BCC lattice distortion and creep resistance.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"Nb\": 0.25, \"V\": 0.20, \"W\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"Mo-Nb-V-W BCC base with Si to nucleate fine Nb5Si3 and Mo5Si3 precipitates; V improves ductility margin while Si drives precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Ta\": 0.20, \"C\": 0.20},\n      \"rationale\": \"Carbon additions to a Cr-Mo-W-Ta refractory alloy expected to form dense MC and M6C carbide dispersion providing very high hardness via Orowan precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.22, \"Mo\": 0.22, \"W\": 0.22, \"Hf\": 0.22, \"B\": 0.12},\n      \"rationale\": \"Hf boride (HfB2) is one of the hardest known compounds; combined with MoB and W2B in a refractory matrix, extreme hardness is expected through multi-boride precipitation.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Mo\": 0.20, \"Nb\": 0.20, \"Ta\": 0.20, \"W\": 0.15, \"Cr\": 0.10},\n      \"rationale\": \"Al addition to BCC refractory base promotes B2-ordered Al(Nb,Ta) precipitates within the BCC matrix, providing coherency strengthening analogous to gamma-prime in superalloys.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Nb\": 0.20, \"B\": 0.20},\n      \"rationale\": \"Ti-Mo-W-Nb boride system targeting TiB2, NbB2 dispersion in a BCC metal matrix composite structure; high hardness expected from ceramic-phase reinforcement.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.20, \"W\": 0.20, \"Mo\": 0.20, \"Ta\": 0.20, \"Cr\": 0.20},\n      \"rationale\": \"Equimolar Re-W-Mo-Ta-Cr explores the highest-melting-point BCC region; Re is known to uniquely strengthen W and Mo alloys through electronic-structure-mediated lattice friction increase.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.20, \"Ta\": 0.20, \"W\": 0.15, \"Mo\": 0.15, \"Si\": 0.15, \"B\": 0.15},\n      \"rationale\": \"Co-addition of Si and B to Nb-Ta-W-Mo refractory base aims to simultaneously precipitate silicides and borides, maximizing volume fraction of hard second phases.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Mo\": 0.25, \"W\": 0.20, \"Re\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"Cr-Mo-W-Re alloy with Si exploits Cr3Si and Mo5Si3 silicide precipitation in a hard BCC/sigma-phase matrix; Re addition increases matrix solid-solution hardness further.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar-ish compositions achieving ~750 HV, but has not explored refractory-element-dominated systems (W, Ta, Re, Nb) that can provide massive solid-solution hardening and intermetallic precipitation in BCC-dominant matrices. Additionally, boride/carbide-forming additions (B, C, Si) with refractory bases remain completely untried, yet are known to dramatically boost hardness through precipitation hardening and grain boundary strengthening. Shifting to BCC/dual-phase refractory HEAs and precipitation-strengthened systems should break the plateau.",
+    "mechanism": "Solid-solution strengthening in BCC refractory matrices combined with intermetallic/carbide/boride precipitation hardening, supplemented by lattice distortion hardening from large atomic-size-mismatch elements (Ta, W, Hf, Zr).",
+    "raw_candidates": [
+      {
+        "W": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "Nb": 0.2,
+        "Cr": 0.2
+      },
+      {
+        "W": 0.25,
+        "Mo": 0.25,
+        "Ta": 0.2,
+        "Nb": 0.15,
+        "Si": 0.15
+      },
+      {
+        "W": 0.2,
+        "Mo": 0.2,
+        "Ta": 0.2,
+        "Cr": 0.2,
+        "B": 0.2
+      },
+      {
+        "Ta": 0.25,
+        "W": 0.25,
+        "Mo": 0.2,
+        "Re": 0.15,
+        "Nb": 0.15
+      },
+      {
+        "Mo": 0.25,
+        "Nb": 0.25,
+        "V": 0.2,
+        "W": 0.15,
+        "Si": 0.15
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Ta": 0.2,
+        "C": 0.2
+      },
+      {
+        "Nb": 0.22,
+        "Mo": 0.22,
+        "W": 0.22,
+        "Hf": 0.22,
+        "B": 0.12
+      },
+      {
+        "Al": 0.15,
+        "Mo": 0.2,
+        "Nb": 0.2,
+        "Ta": 0.2,
+        "W": 0.15,
+        "Cr": 0.1
+      },
+      {
+        "Ti": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Nb": 0.2,
+        "B": 0.2
+      },
+      {
+        "Re": 0.2,
+        "W": 0.2,
+        "Mo": 0.2,
+        "Ta": 0.2,
+        "Cr": 0.2
+      },
+      {
+        "Nb": 0.2,
+        "Ta": 0.2,
+        "W": 0.15,
+        "Mo": 0.15,
+        "Si": 0.15,
+        "B": 0.15
+      },
+      {
+        "Cr": 0.25,
+        "Mo": 0.25,
+        "W": 0.2,
+        "Re": 0.15,
+        "Si": 0.15
+      }
+    ]
+  },
+  {
+    "iteration": 20,
+    "stagnation_count": 10,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "9625ddb717c98390",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar-ish compositions yielding ~750 HV via solid-solution hardening and minor intermetallic formation. To escape this basin, we should explore two underutilized directions: (1) refractory-element-rich HEAs (W, Ta, Mo, Nb, Re) with BCC-dominant structures that exploit lattice-distortion hardening and precipitation of hard Laves/sigma phases, and (2) interstitial-free boride/carbide-forming systems featuring B, C, or Si additions that create hard second phases in situ during casting. Both regions are physically distinct from the FCC-leaning Co-Cr base and have been essentially untouched.\",\n  \"strengthening_mechanism\": \"Primary: lattice-distortion solid-solution hardening in high-melting-point BCC refractory HEAs, supplemented by in-situ precipitation of hard intermetallic/ceramic phases (Laves, sigma, borides, silicides) during as-cast solidification.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"W\": 0.20, \"Mo\": 0.20, \"Ta\": 0.20, \"Nb\": 0.20, \"Cr\": 0.20},\n      \"rationale\": \"Equimolar 5-element refractory BCC alloy with extreme atomic-size mismatch and high shear moduli for maximum lattice-distortion hardening.\"\n    },\n    {\n      \"composition\": {\"W\": 0.25, \"Mo\": 0.25, \"Nb\": 0.20, \"Ta\": 0.20, \"V\": 0.10},\n      \"rationale\": \"W-Mo-rich BCC core with V reducing density while maintaining large misfit parameter; expected to form strong solid solution without brittle sigma phases.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"Nb\": 0.25, \"Ta\": 0.20, \"W\": 0.15, \"Re\": 0.15},\n      \"rationale\": \"Re addition to a Mo-Nb-Ta-W base exploits the rhenium solid-solution effect (strengthens BCC metals) and increases electron density for enhanced bonding.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Mo\": 0.25, \"W\": 0.20, \"Si\": 0.15, \"B\": 0.15},\n      \"rationale\": \"High Si+B content promotes in-situ precipitation of hard Cr-Mo silicides and borides (e.g., Mo2B, CrSi2) as a reinforcing phase skeleton in the as-cast microstructure.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.30, \"Cr\": 0.25, \"Si\": 0.20, \"Ta\": 0.15, \"B\": 0.10},\n      \"rationale\": \"Mo-Cr silicide matrix with B and Ta additions to refine grain size and form Ta boride precipitates, targeting synergistic precipitation + solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.25, \"Mo\": 0.20, \"Cr\": 0.20, \"Si\": 0.20, \"B\": 0.15},\n      \"rationale\": \"Nb-Si eutectic-inspired composition extended to HEA space; Nb silicides are among the hardest intermetallics and form readily during as-cast solidification.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"Hf\": 0.20, \"Si\": 0.20},\n      \"rationale\": \"Hf addition to refractory W-Ta-Mo suite promotes formation of hard HfSi2 and HfW2 Laves phases that pin dislocations and raise hardness significantly.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Zr\": 0.20, \"B\": 0.20},\n      \"rationale\": \"High B content (20 at%) with Zr, Cr, Mo, W targets a boride-dispersion-hardened structure where ZrB2, CrB, and MoB particles form a hard composite.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"Cr\": 0.20, \"V\": 0.20, \"W\": 0.20, \"C\": 0.15},\n      \"rationale\": \"Carbon addition to a Mo-Cr-V-W BCC matrix drives precipitation of hard mixed-metal carbides (Mo2C, WC, VC) in the as-cast state for carbide dispersion hardening.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Re\": 0.20},\n      \"rationale\": \"Fully refractory 5-element equimolar alloy including Re; Re stabilizes BCC structure and increases the Peierls stress, expected to push solid-solution hardness beyond 800 HV.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.30, \"W\": 0.25, \"Nb\": 0.20, \"Si\": 0.15, \"Hf\": 0.10},\n      \"rationale\": \"Mo-W dominant BCC matrix with Hf for Laves phase formation and Si for silicide precipitation; Hf also acts as grain-boundary segregant to impede coarsening.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.22, \"Mo\": 0.22, \"Ta\": 0.18, \"B\": 0.20, \"Si\": 0.18},\n      \"rationale\": \"Borosilicide-rich composition targeting a dual-phase microstructure of hard CrB/TaB2 borides and Cr-Mo silicides for extreme hardness via composite strengthening.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar-ish compositions yielding ~750 HV via solid-solution hardening and minor intermetallic formation. To escape this basin, we should explore two underutilized directions: (1) refractory-element-rich HEAs (W, Ta, Mo, Nb, Re) with BCC-dominant structures that exploit lattice-distortion hardening and precipitation of hard Laves/sigma phases, and (2) interstitial-free boride/carbide-forming systems featuring B, C, or Si additions that create hard second phases in situ during casting. Both regions are physically distinct from the FCC-leaning Co-Cr base and have been essentially untouched.",
+    "mechanism": "Primary: lattice-distortion solid-solution hardening in high-melting-point BCC refractory HEAs, supplemented by in-situ precipitation of hard intermetallic/ceramic phases (Laves, sigma, borides, silicides) during as-cast solidification.",
+    "raw_candidates": [
+      {
+        "W": 0.2,
+        "Mo": 0.2,
+        "Ta": 0.2,
+        "Nb": 0.2,
+        "Cr": 0.2
+      },
+      {
+        "W": 0.25,
+        "Mo": 0.25,
+        "Nb": 0.2,
+        "Ta": 0.2,
+        "V": 0.1
+      },
+      {
+        "Mo": 0.25,
+        "Nb": 0.25,
+        "Ta": 0.2,
+        "W": 0.15,
+        "Re": 0.15
+      },
+      {
+        "Cr": 0.25,
+        "Mo": 0.25,
+        "W": 0.2,
+        "Si": 0.15,
+        "B": 0.15
+      },
+      {
+        "Mo": 0.3,
+        "Cr": 0.25,
+        "Si": 0.2,
+        "Ta": 0.15,
+        "B": 0.1
+      },
+      {
+        "Nb": 0.25,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Si": 0.2,
+        "B": 0.15
+      },
+      {
+        "W": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "Hf": 0.2,
+        "Si": 0.2
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Zr": 0.2,
+        "B": 0.2
+      },
+      {
+        "Mo": 0.25,
+        "Cr": 0.2,
+        "V": 0.2,
+        "W": 0.2,
+        "C": 0.15
+      },
+      {
+        "Nb": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Re": 0.2
+      },
+      {
+        "Mo": 0.3,
+        "W": 0.25,
+        "Nb": 0.2,
+        "Si": 0.15,
+        "Hf": 0.1
+      },
+      {
+        "Cr": 0.22,
+        "Mo": 0.22,
+        "Ta": 0.18,
+        "B": 0.2,
+        "Si": 0.18
+      }
+    ]
+  },
+  {
+    "iteration": 23,
+    "stagnation_count": 13,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "7108f428ea8f0490",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged around equimolar Co-Cr-Fe-Mo-Ni-Ti alloys (~HV 750) and is sampling minor variations of the same FCC/BCC region. To escape, we should explore (1) carbide/boride-forming additions (C, B) for interstitial hardening, (2) refractory BCC-dominant systems with Ta/W/Nb at non-equimolar ratios targeting solid-solution + precipitation hardening, and (3) Al-Ti-Nb-Zr systems with heavy lattice distortion. These regions are physically distinct and largely untried.\",\n  \"strengthening_mechanism\": \"Primary mechanisms vary by group: interstitial solid-solution + carbide/boride precipitation hardening (B/C-containing), severe lattice distortion solid-solution strengthening in refractory BCC HEAs (Ta/W/Re/Mo-rich), and ordered L12/B2 precipitation hardening in Al-Ni-Ti-Nb systems.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Co\": 0.25, \"Cr\": 0.25, \"Fe\": 0.20, \"Ni\": 0.20, \"C\": 0.10},\n      \"rationale\": \"Interstitial carbon in a Co-Cr-Fe-Ni matrix promotes carbide (Cr23C6, M7C3) precipitation along grain boundaries and within grains, providing strong precipitation and interstitial hardening beyond the carbide-free best (~750 HV).\"\n    },\n    {\n      \"composition\": {\"Co\": 0.22, \"Cr\": 0.22, \"Fe\": 0.22, \"Ni\": 0.22, \"B\": 0.12},\n      \"rationale\": \"Boron additions to Co-Cr-Fe-Ni form refractory borides (Cr2B, Fe2B) as hard second phases; interstitial B also pins dislocations, expected to push hardness well above 750 HV.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"Fe\": 0.20, \"Ni\": 0.15, \"B\": 0.13, \"C\": 0.12},\n      \"rationale\": \"Combined B+C additions into a Cr-Mo-Fe-Ni matrix maximize dual precipitation of borides and carbides, leveraging synergistic interstitial strengthening unexplored in the current run.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.30, \"W\": 0.25, \"Mo\": 0.20, \"Cr\": 0.15, \"Re\": 0.10},\n      \"rationale\": \"Ta-rich refractory BCC HEA with large atomic size mismatch (Ta vs W/Re) maximizes solid-solution lattice distortion strengthening; Ta2O5/Ta-rich precipitates expected in as-cast condition.\"\n    },\n    {\n      \"composition\": {\"W\": 0.30, \"Ta\": 0.25, \"Mo\": 0.20, \"Nb\": 0.15, \"Re\": 0.10},\n      \"rationale\": \"W-dominant refractory BCC alloy exploiting Re's solid-solution strengthening of W (analogous to W-Re alloys) combined with Ta/Nb lattice distortion; targets very high intrinsic hardness of BCC matrix.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"W\": 0.20, \"Ta\": 0.20, \"Cr\": 0.20, \"Si\": 0.15},\n      \"rationale\": \"Si addition to Mo-W-Ta-Cr promotes silicide formation (Mo5Si3, Cr3Si), providing hard intermetallic precipitates in a BCC matrix; distinct from the Mo-Ta-Cr-Al-Si tried (no Al, higher W).\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Ni\": 0.25, \"Ti\": 0.20, \"Nb\": 0.15, \"Zr\": 0.15},\n      \"rationale\": \"Al-Ni-Ti drives ordered L12 (Ni3Al/Ni3Ti) precipitation; Nb and Zr substitute into the \u03b3' phase, increasing antiphase boundary energy and misfit, giving precipitation + lattice-distortion strengthening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Ni\": 0.20, \"Ti\": 0.20, \"Nb\": 0.20, \"Mo\": 0.10, \"Zr\": 0.10},\n      \"rationale\": \"Six-component variant adding Mo to the Al-Ni-Ti-Nb-Zr system to further strengthen the BCC/B2 matrix through solid-solution hardening while maintaining L12 precipitation.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.30, \"Co\": 0.20, \"Cr\": 0.15, \"Fe\": 0.15, \"Ni\": 0.10, \"Ti\": 0.10},\n      \"rationale\": \"High Al content (>25 at%) stabilizes a B2-ordered phase in an Al-Co-Cr-Fe-Ni-Ti alloy; B2/BCC ordering hardening plus coherent B2 precipitates in an FCC matrix expected to significantly exceed current best.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Co\": 0.25, \"Cr\": 0.20, \"Ti\": 0.20, \"B\": 0.10},\n      \"rationale\": \"Al-Co-Cr-Ti with boron: B2 (AlCo) and L12 (Co3Ti) ordering provide dual precipitation hardening, while boron segregates to phase boundaries refining microstructure and enhancing grain-boundary strength.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Cr\": 0.20, \"Mo\": 0.20, \"V\": 0.15, \"C\": 0.12, \"B\": 0.08},\n      \"rationale\": \"Fe-Cr-Mo-V base with combined C+B targets a tool-steel-analog HEA; V promotes VC and VB2 hard precipitates alongside Cr carbides/borides for extremely high hardness via multi-phase precipitation.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.25, \"Mo\": 0.20, \"Ti\": 0.20, \"Al\": 0.20, \"Si\": 0.15},\n      \"rationale\": \"Nb-Mo-Ti-Al-Si system targets silicide-reinforced BCC HEA (Nb5Si3 + Mo5Si3); large Nb content promotes hard silicide precipitates while Al stabilizes BCC solid solution, a region completely unexplored in this run.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged around equimolar Co-Cr-Fe-Mo-Ni-Ti alloys (~HV 750) and is sampling minor variations of the same FCC/BCC region. To escape, we should explore (1) carbide/boride-forming additions (C, B) for interstitial hardening, (2) refractory BCC-dominant systems with Ta/W/Nb at non-equimolar ratios targeting solid-solution + precipitation hardening, and (3) Al-Ti-Nb-Zr systems with heavy lattice distortion. These regions are physically distinct and largely untried.",
+    "mechanism": "Primary mechanisms vary by group: interstitial solid-solution + carbide/boride precipitation hardening (B/C-containing), severe lattice distortion solid-solution strengthening in refractory BCC HEAs (Ta/W/Re/Mo-rich), and ordered L12/B2 precipitation hardening in Al-Ni-Ti-Nb systems.",
+    "raw_candidates": [
+      {
+        "Co": 0.25,
+        "Cr": 0.25,
+        "Fe": 0.2,
+        "Ni": 0.2,
+        "C": 0.1
+      },
+      {
+        "Co": 0.22,
+        "Cr": 0.22,
+        "Fe": 0.22,
+        "Ni": 0.22,
+        "B": 0.12
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Fe": 0.2,
+        "Ni": 0.15,
+        "B": 0.13,
+        "C": 0.12
+      },
+      {
+        "Ta": 0.3,
+        "W": 0.25,
+        "Mo": 0.2,
+        "Cr": 0.15,
+        "Re": 0.1
+      },
+      {
+        "W": 0.3,
+        "Ta": 0.25,
+        "Mo": 0.2,
+        "Nb": 0.15,
+        "Re": 0.1
+      },
+      {
+        "Mo": 0.25,
+        "W": 0.2,
+        "Ta": 0.2,
+        "Cr": 0.2,
+        "Si": 0.15
+      },
+      {
+        "Al": 0.25,
+        "Ni": 0.25,
+        "Ti": 0.2,
+        "Nb": 0.15,
+        "Zr": 0.15
+      },
+      {
+        "Al": 0.2,
+        "Ni": 0.2,
+        "Ti": 0.2,
+        "Nb": 0.2,
+        "Mo": 0.1,
+        "Zr": 0.1
+      },
+      {
+        "Al": 0.3,
+        "Co": 0.2,
+        "Cr": 0.15,
+        "Fe": 0.15,
+        "Ni": 0.1,
+        "Ti": 0.1
+      },
+      {
+        "Al": 0.25,
+        "Co": 0.25,
+        "Cr": 0.2,
+        "Ti": 0.2,
+        "B": 0.1
+      },
+      {
+        "Fe": 0.25,
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "V": 0.15,
+        "C": 0.12,
+        "B": 0.08
+      },
+      {
+        "Nb": 0.25,
+        "Mo": 0.2,
+        "Ti": 0.2,
+        "Al": 0.2,
+        "Si": 0.15
+      }
+    ]
+  },
+  {
+    "iteration": 26,
+    "stagnation_count": 16,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "d165a24952272be4",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged around Co-Cr-Fe-Ni-based and Al-Cr-Fe-Ni-based compositions, achieving ~750 HV via solid-solution strengthening and moderate intermetallic formation. To escape stagnation, we should explore refractory-element-rich compositions incorporating B, C, Si, or Zr as interstitial/reactive solutes to trigger precipitation of hard borides, carbides, or silicides, and also try W-Re-heavy refractory alloys with large lattice distortion. These regions are physically distinct: they leverage precipitation hardening and lattice-distortion-induced solid-solution strengthening in BCC-dominant matrices, which can yield HV well above 750.\",\n  \"strengthening_mechanism\": \"Precipitation hardening via in-situ formation of hard borides (MB2), carbides (MC), and silicides (M5Si3) combined with severe lattice distortion solid-solution strengthening in BCC refractory matrices\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Mo\": 0.25, \"Cr\": 0.20, \"Fe\": 0.20, \"Ni\": 0.15, \"B\": 0.10, \"Si\": 0.10},\n      \"rationale\": \"B and Si additions to a Mo-Cr-Fe-Ni matrix are expected to precipitate hard MoB and Cr5Si3 phases, boosting hardness through precipitation strengthening in an otherwise solid-solution matrix.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"Fe\": 0.15, \"B\": 0.15, \"Ni\": 0.10},\n      \"rationale\": \"High B content with W and Mo should form dispersed W2B and MoB borides in a BCC matrix, providing very high hardness through combined precipitation and solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"Fe\": 0.20, \"C\": 0.10, \"Si\": 0.10},\n      \"rationale\": \"Carbon additions to a Ti-Mo-Cr-Fe matrix promote TiC and Mo2C carbide precipitation, known to dramatically increase hardness; Si further refines grain boundaries.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"Ni\": 0.15, \"B\": 0.15, \"Al\": 0.10},\n      \"rationale\": \"NbB2 and MoB borides embedded in a Cr-Ni-Al matrix provide a dual-hardening approach: precipitation of hard borides plus Al-induced B2 ordering for extra strength.\"\n    },\n    {\n      \"composition\": {\"W\": 0.25, \"Re\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"Si\": 0.15},\n      \"rationale\": \"W-Re-Mo creates extreme lattice distortion and high misfit in a BCC phase; Si additions form WSi2/MoSi2 silicides providing additional precipitation hardening, a region largely unexplored.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.20, \"W\": 0.20, \"Mo\": 0.15, \"Cr\": 0.15, \"B\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"Ta and W borides and silicides (TaB2, Ta5Si3) are among the hardest known compounds; this refractory-boride-silicide composite region has not been directly sampled.\"\n    },\n    {\n      \"composition\": {\"Zr\": 0.20, \"Nb\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"B\": 0.12, \"Al\": 0.08},\n      \"rationale\": \"ZrB2 and NbB2 precipitates in a Mo-Cr-Al BCC matrix combine ultra-hard boride reinforcement with solid-solution strengthening from Al, exploiting a Zr-Nb-B region untested so far.\"\n    },\n    {\n      \"composition\": {\"Hf\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"Fe\": 0.15, \"B\": 0.15, \"Ni\": 0.10},\n      \"rationale\": \"HfB2 has one of the highest hardnesses among diborides; dispersing HfB2 precipitates in a Mo-Cr-Fe-Ni solid-solution matrix should yield outstanding hardness via precipitation strengthening.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.25, \"Mo\": 0.20, \"Nb\": 0.15, \"Al\": 0.15, \"C\": 0.13, \"Si\": 0.12},\n      \"rationale\": \"Dual interstitial hardening: TiC and (Ti,Nb)C carbides form readily and Si refines the microstructure; high C+Si content in a Ti-Mo-Nb-Al matrix is a largely unexplored hardening route.\"\n    },\n    {\n      \"composition\": {\"W\": 0.22, \"Cr\": 0.22, \"Mo\": 0.18, \"Co\": 0.18, \"B\": 0.10, \"C\": 0.10},\n      \"rationale\": \"Combined carbide (Cr7C3, WC) and boride (W2B, CrB2) precipitation in a W-Cr-Mo-Co BCC matrix, exploiting dual interstitial solutes in a refractory-Co matrix not yet explored.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.20, \"W\": 0.20, \"Mo\": 0.20, \"Nb\": 0.15, \"Cr\": 0.15, \"Si\": 0.10},\n      \"rationale\": \"Re addition maximizes solid-solution strengthening via the rhenium effect in a BCC W-Mo-Nb matrix; Si promotes silicide precipitation to further restrict dislocation motion.\"\n    },\n    {\n      \"composition\": {\"V\": 0.20, \"Cr\": 0.20, \"Mo\": 0.20, \"Ni\": 0.15, \"B\": 0.15, \"Zr\": 0.10},\n      \"rationale\": \"V and Cr diborides (VB2, CrB2) and Zr borides form in a Mo-Ni solid-solution matrix, combining precipitation of multiple hard boride phases with BCC lattice distortion in an underexplored V-Cr-B-Zr composition space.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged around Co-Cr-Fe-Ni-based and Al-Cr-Fe-Ni-based compositions, achieving ~750 HV via solid-solution strengthening and moderate intermetallic formation. To escape stagnation, we should explore refractory-element-rich compositions incorporating B, C, Si, or Zr as interstitial/reactive solutes to trigger precipitation of hard borides, carbides, or silicides, and also try W-Re-heavy refractory alloys with large lattice distortion. These regions are physically distinct: they leverage precipitation hardening and lattice-distortion-induced solid-solution strengthening in BCC-dominant matrices, which can yield HV well above 750.",
+    "mechanism": "Precipitation hardening via in-situ formation of hard borides (MB2), carbides (MC), and silicides (M5Si3) combined with severe lattice distortion solid-solution strengthening in BCC refractory matrices",
+    "raw_candidates": [
+      {
+        "Mo": 0.25,
+        "Cr": 0.2,
+        "Fe": 0.2,
+        "Ni": 0.15,
+        "B": 0.1,
+        "Si": 0.1
+      },
+      {
+        "W": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Fe": 0.15,
+        "B": 0.15,
+        "Ni": 0.1
+      },
+      {
+        "Ti": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Fe": 0.2,
+        "C": 0.1,
+        "Si": 0.1
+      },
+      {
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Ni": 0.15,
+        "B": 0.15,
+        "Al": 0.1
+      },
+      {
+        "W": 0.25,
+        "Re": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Si": 0.15
+      },
+      {
+        "Ta": 0.2,
+        "W": 0.2,
+        "Mo": 0.15,
+        "Cr": 0.15,
+        "B": 0.15,
+        "Si": 0.15
+      },
+      {
+        "Zr": 0.2,
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "B": 0.12,
+        "Al": 0.08
+      },
+      {
+        "Hf": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Fe": 0.15,
+        "B": 0.15,
+        "Ni": 0.1
+      },
+      {
+        "Ti": 0.25,
+        "Mo": 0.2,
+        "Nb": 0.15,
+        "Al": 0.15,
+        "C": 0.13,
+        "Si": 0.12
+      },
+      {
+        "W": 0.22,
+        "Cr": 0.22,
+        "Mo": 0.18,
+        "Co": 0.18,
+        "B": 0.1,
+        "C": 0.1
+      },
+      {
+        "Re": 0.2,
+        "W": 0.2,
+        "Mo": 0.2,
+        "Nb": 0.15,
+        "Cr": 0.15,
+        "Si": 0.1
+      },
+      {
+        "V": 0.2,
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Ni": 0.15,
+        "B": 0.15,
+        "Zr": 0.1
+      }
+    ]
+  },
+  {
+    "iteration": 29,
+    "stagnation_count": 19,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "0591da5a64da719b",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged around Co-Cr-Fe-Mo-Ni-Ti-Al combinations near equimolar distributions, which have been extensively explored. The high-hardness compositions all share a transition-metal base with Mo for solid-solution strengthening, but intermetallic-forming additions like B, Si, and Zr in combination with strong carbide/boride-forming elements (W, Ta, Nb) in non-refractory matrices have not been tried. Additionally, compositions leveraging B for boride precipitation hardening alongside Al-Ni for L12/B2 ordered-phase precipitation in a Cr-Fe matrix represent an entirely unexplored region with strong physical motivation.\",\n  \"strengthening_mechanism\": \"Precipitation hardening via ordered intermetallic phases (L12 Ni3Al, B2 NiAl, and metal borides/silicides) combined with solid-solution misfit hardening from large-atom additions (Zr, Hf, Ta) in a FCC/BCC dual-phase matrix\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Al\": 0.15, \"Ni\": 0.30, \"Cr\": 0.25, \"Fe\": 0.20, \"B\": 0.10},\n      \"rationale\": \"High Ni+Al ratio promotes dense L12-Ni3Al precipitation in a Cr-Fe matrix, while B segregates to grain boundaries and forms Cr/Fe borides for additional precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Ni\": 0.25, \"Co\": 0.20, \"Cr\": 0.15, \"B\": 0.12, \"Zr\": 0.08},\n      \"rationale\": \"B and Zr together promote ZrB2 and Cr boride formation; Al+Ni sustain L12 precipitates, while Zr provides large misfit solid-solution hardening in a Co-Cr-Ni base.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.28, \"Al\": 0.18, \"Fe\": 0.20, \"Si\": 0.14, \"B\": 0.10, \"Cr\": 0.10},\n      \"rationale\": \"Si stabilizes Ni3Si (L12) alongside Ni3Al, creating a dual-precipitate microstructure; B refines grain size and adds boride dispersion strengthening.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.30, \"Al\": 0.20, \"W\": 0.20, \"Ta\": 0.15, \"B\": 0.15},\n      \"rationale\": \"W and Ta in a Co-Al matrix stabilize a hard B2-CoAl phase with W/Ta substitution; B additions form refractory borides (TaB, W2B) for dispersion strengthening.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Cr\": 0.20, \"Al\": 0.20, \"Si\": 0.15, \"B\": 0.12, \"Ni\": 0.08},\n      \"rationale\": \"Fe-Cr-Al base with Si and B targets Fe2B and Cr boride/silicide precipitation in a ferritic matrix, exploiting a strengthening region entirely distinct from explored Co-Ni-Mo compositions.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.35, \"Al\": 0.25, \"Ti\": 0.15, \"B\": 0.15, \"Si\": 0.10},\n      \"rationale\": \"Very high Ni3Al volume fraction is targeted with Ti substituting into L12 precipitates; Si and B form Ni3Si and boundary borides to simultaneously strengthen matrix and interfaces.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.25, \"Cr\": 0.20, \"W\": 0.20, \"Si\": 0.18, \"B\": 0.17},\n      \"rationale\": \"Co-Cr-W matrix with high Si+B concentrations targets Co3W and hard silicide/boride intermetallic formation, a refractory-boride precipitation approach not previously explored.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.30, \"Ni\": 0.22, \"Al\": 0.18, \"Zr\": 0.15, \"B\": 0.15},\n      \"rationale\": \"Zr+B pairing in a Fe-Ni-Al matrix promotes ZrB2 precipitation; Al drives B2-NiAl ordering, creating a multi-phase microstructure with both boride dispersoids and ordered precipitates.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Fe\": 0.25, \"Al\": 0.18, \"Si\": 0.17, \"B\": 0.15},\n      \"rationale\": \"A boron-rich Cr-Fe-Al-Si alloy targeting dense (Cr,Fe)2B and Fe3Si/Fe3Al intermetallics for a high-hardness duplex intermetallic microstructure in a ferritic matrix.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.30, \"Co\": 0.20, \"Al\": 0.18, \"Ta\": 0.15, \"B\": 0.10, \"Si\": 0.07},\n      \"rationale\": \"Ta substitutes into Ni3Al L12 precipitates raising anti-phase boundary energy; B and Si provide additional boundary and silicide hardening in a Ni-Co FCC matrix.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.28, \"Cr\": 0.22, \"Mo\": 0.15, \"Si\": 0.18, \"B\": 0.17},\n      \"rationale\": \"Fe-Cr-Mo base with high Si+B targets the hard sigma/chi-phase suppression regime while promoting Fe3Si and Mo boride precipitates for extreme dispersion strengthening.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.25, \"Al\": 0.20, \"Cr\": 0.18, \"Hf\": 0.15, \"B\": 0.12, \"Si\": 0.10},\n      \"rationale\": \"Hf has the largest atomic misfit in Ni-Al L12 among available elements, maximizing precipitate/matrix misfit hardening; B and Si add boride and silicide dispersion on a different length scale.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged around Co-Cr-Fe-Mo-Ni-Ti-Al combinations near equimolar distributions, which have been extensively explored. The high-hardness compositions all share a transition-metal base with Mo for solid-solution strengthening, but intermetallic-forming additions like B, Si, and Zr in combination with strong carbide/boride-forming elements (W, Ta, Nb) in non-refractory matrices have not been tried. Additionally, compositions leveraging B for boride precipitation hardening alongside Al-Ni for L12/B2 ordered-phase precipitation in a Cr-Fe matrix represent an entirely unexplored region with strong physical motivation.",
+    "mechanism": "Precipitation hardening via ordered intermetallic phases (L12 Ni3Al, B2 NiAl, and metal borides/silicides) combined with solid-solution misfit hardening from large-atom additions (Zr, Hf, Ta) in a FCC/BCC dual-phase matrix",
+    "raw_candidates": [
+      {
+        "Al": 0.15,
+        "Ni": 0.3,
+        "Cr": 0.25,
+        "Fe": 0.2,
+        "B": 0.1
+      },
+      {
+        "Al": 0.2,
+        "Ni": 0.25,
+        "Co": 0.2,
+        "Cr": 0.15,
+        "B": 0.12,
+        "Zr": 0.08
+      },
+      {
+        "Ni": 0.28,
+        "Al": 0.18,
+        "Fe": 0.2,
+        "Si": 0.14,
+        "B": 0.1,
+        "Cr": 0.1
+      },
+      {
+        "Co": 0.3,
+        "Al": 0.2,
+        "W": 0.2,
+        "Ta": 0.15,
+        "B": 0.15
+      },
+      {
+        "Fe": 0.25,
+        "Cr": 0.2,
+        "Al": 0.2,
+        "Si": 0.15,
+        "B": 0.12,
+        "Ni": 0.08
+      },
+      {
+        "Ni": 0.35,
+        "Al": 0.25,
+        "Ti": 0.15,
+        "B": 0.15,
+        "Si": 0.1
+      },
+      {
+        "Co": 0.25,
+        "Cr": 0.2,
+        "W": 0.2,
+        "Si": 0.18,
+        "B": 0.17
+      },
+      {
+        "Fe": 0.3,
+        "Ni": 0.22,
+        "Al": 0.18,
+        "Zr": 0.15,
+        "B": 0.15
+      },
+      {
+        "Cr": 0.25,
+        "Fe": 0.25,
+        "Al": 0.18,
+        "Si": 0.17,
+        "B": 0.15
+      },
+      {
+        "Ni": 0.3,
+        "Co": 0.2,
+        "Al": 0.18,
+        "Ta": 0.15,
+        "B": 0.1,
+        "Si": 0.07
+      },
+      {
+        "Fe": 0.28,
+        "Cr": 0.22,
+        "Mo": 0.15,
+        "Si": 0.18,
+        "B": 0.17
+      },
+      {
+        "Ni": 0.25,
+        "Al": 0.2,
+        "Cr": 0.18,
+        "Hf": 0.15,
+        "B": 0.12,
+        "Si": 0.1
+      }
+    ]
+  },
+  {
+    "iteration": 32,
+    "stagnation_count": 22,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "cfde83bf7100680d",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has heavily explored Co-Cr-Fe-Ni-based FCC alloys and refractory Mo-W-Ta-Nb alloys, both yielding plateaus around 600-750 HV. A fundamentally different strategy is to exploit intermetallic-reinforced BCC/B2 matrices through high Al+Ti content combined with strong B2-forming elements (Ni, Co) and solution-strengthening refractory additions (Nb, Mo, Zr), which can promote ordered B2 precipitates in a disordered BCC matrix for exceptional hardness. Additionally, compositions leveraging Laves-phase or silicide precipitation with Cr-Mo-Si-Nb and Zr-Ti-Nb-based systems with C micro-additions have not been systematically explored.\",\n  \"strengthening_mechanism\": \"B2/L12 ordered precipitate hardening in BCC matrix, combined with solid-solution strengthening from misfit-heavy refractory elements (Nb, Mo, Zr, Ta) and intermetallic precipitation (Laves phases, silicides); secondary mechanism includes carbide/boride dispersion hardening.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Al\": 0.25, \"Ni\": 0.25, \"Ti\": 0.20, \"Nb\": 0.15, \"Mo\": 0.15},\n      \"rationale\": \"High Al+Ni promotes dense B2-NiAl ordering in a BCC matrix reinforced by Ti, Nb, and Mo solid-solution strengthening, targeting intermetallic precipitation hardening above 800 HV.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.30, \"Ni\": 0.20, \"Co\": 0.15, \"Ti\": 0.20, \"Zr\": 0.15},\n      \"rationale\": \"Very high Al drives strong B2 phase formation with Ni; Ti and Zr introduce severe lattice distortion and Laves-phase precipitates, while Co stabilizes the BCC/B2 dual-phase microstructure.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Ti\": 0.25, \"Nb\": 0.20, \"Mo\": 0.15, \"Zr\": 0.15},\n      \"rationale\": \"Refractory BCC alloy with large atomic size mismatch between Al, Zr, and Nb promoting severe lattice distortion hardening and possible Al3Ti-type precipitation without FCC-forming elements.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Ni\": 0.20, \"Co\": 0.20, \"Ti\": 0.20, \"Ta\": 0.20},\n      \"rationale\": \"Quinary equimolar alloy combining two B2 formers (Al-Ni, Al-Co) with Ti and Ta for L12/B2 coherent precipitate hardening in a near-equiatomic matrix\u2014unexplored region.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Ni\": 0.20, \"Ti\": 0.20, \"Mo\": 0.20, \"Cr\": 0.15},\n      \"rationale\": \"Replaces Co with Cr for BCC stabilization and oxidation resistance while maintaining B2-NiAl precipitation; Mo provides the largest solid-solution hardening contribution in the BCC lattice.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"Si\": 0.20, \"Nb\": 0.20, \"Fe\": 0.20},\n      \"rationale\": \"Silicide-precipitation-hardened alloy: Cr-Mo-Si-Nb is known to form hard MoSi2/CrSi2-type phases in situ; Fe adjusts lattice parameter and stabilizes a BCC matrix for combined silicide + solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Mo\": 0.25, \"Si\": 0.15, \"Nb\": 0.20, \"Al\": 0.15},\n      \"rationale\": \"Higher Cr+Mo with Si targets Cr-Mo silicide Laves precipitation; Al addition promotes B2 ordering and reduces density while maintaining BCC matrix stability.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.25, \"Zr\": 0.20, \"Nb\": 0.20, \"Mo\": 0.20, \"Al\": 0.15},\n      \"rationale\": \"HCP-to-BCC refractory alloy with heavy Ti/Zr content introducing omega-phase precipitation hardening, a mechanism completely unexplored in this run; Al suppresses omega to controllable volume fraction.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.20, \"Co\": 0.20, \"Ni\": 0.15, \"Al\": 0.20, \"Ti\": 0.15, \"Nb\": 0.10},\n      \"rationale\": \"Superalloy-inspired composition where high Al+Ti drives coherent gamma-prime (L12) precipitation in a Co-Fe-Ni FCC/BCC dual matrix, with Nb adding both misfit strengthening and Ni3Nb delta phase potential.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.20, \"Ni\": 0.20, \"Al\": 0.20, \"Ti\": 0.20, \"W\": 0.20},\n      \"rationale\": \"Equimolar alloy substituting W for Mo/Cr to maximize solid-solution hardening in a B2-ordered matrix; W has the largest strengthening potency in Ni-based alloys and is underrepresented in top compositions.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Co\": 0.15, \"Ni\": 0.15, \"Ti\": 0.20, \"Zr\": 0.15, \"Mo\": 0.15},\n      \"rationale\": \"Six-element alloy combining B2 formers (Al-Ni, Al-Co), Laves-phase formers (Zr-Mo), and Ti for multimodal precipitation hardening across multiple structural scales.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Ti\": 0.15, \"Nb\": 0.25, \"Mo\": 0.15, \"Zr\": 0.15, \"V\": 0.15},\n      \"rationale\": \"Refractory BCC HEA with high Nb and V promoting omega/beta-phase decomposition hardening and solid-solution strengthening via extreme atomic size disparity between Al, Zr, and the group-V/VI refractory elements.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has heavily explored Co-Cr-Fe-Ni-based FCC alloys and refractory Mo-W-Ta-Nb alloys, both yielding plateaus around 600-750 HV. A fundamentally different strategy is to exploit intermetallic-reinforced BCC/B2 matrices through high Al+Ti content combined with strong B2-forming elements (Ni, Co) and solution-strengthening refractory additions (Nb, Mo, Zr), which can promote ordered B2 precipitates in a disordered BCC matrix for exceptional hardness. Additionally, compositions leveraging Laves-phase or silicide precipitation with Cr-Mo-Si-Nb and Zr-Ti-Nb-based systems with C micro-additions have not been systematically explored.",
+    "mechanism": "B2/L12 ordered precipitate hardening in BCC matrix, combined with solid-solution strengthening from misfit-heavy refractory elements (Nb, Mo, Zr, Ta) and intermetallic precipitation (Laves phases, silicides); secondary mechanism includes carbide/boride dispersion hardening.",
+    "raw_candidates": [
+      {
+        "Al": 0.25,
+        "Ni": 0.25,
+        "Ti": 0.2,
+        "Nb": 0.15,
+        "Mo": 0.15
+      },
+      {
+        "Al": 0.3,
+        "Ni": 0.2,
+        "Co": 0.15,
+        "Ti": 0.2,
+        "Zr": 0.15
+      },
+      {
+        "Al": 0.25,
+        "Ti": 0.25,
+        "Nb": 0.2,
+        "Mo": 0.15,
+        "Zr": 0.15
+      },
+      {
+        "Al": 0.2,
+        "Ni": 0.2,
+        "Co": 0.2,
+        "Ti": 0.2,
+        "Ta": 0.2
+      },
+      {
+        "Al": 0.25,
+        "Ni": 0.2,
+        "Ti": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.15
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Si": 0.2,
+        "Nb": 0.2,
+        "Fe": 0.2
+      },
+      {
+        "Cr": 0.25,
+        "Mo": 0.25,
+        "Si": 0.15,
+        "Nb": 0.2,
+        "Al": 0.15
+      },
+      {
+        "Ti": 0.25,
+        "Zr": 0.2,
+        "Nb": 0.2,
+        "Mo": 0.2,
+        "Al": 0.15
+      },
+      {
+        "Fe": 0.2,
+        "Co": 0.2,
+        "Ni": 0.15,
+        "Al": 0.2,
+        "Ti": 0.15,
+        "Nb": 0.1
+      },
+      {
+        "Co": 0.2,
+        "Ni": 0.2,
+        "Al": 0.2,
+        "Ti": 0.2,
+        "W": 0.2
+      },
+      {
+        "Al": 0.2,
+        "Co": 0.15,
+        "Ni": 0.15,
+        "Ti": 0.2,
+        "Zr": 0.15,
+        "Mo": 0.15
+      },
+      {
+        "Al": 0.15,
+        "Ti": 0.15,
+        "Nb": 0.25,
+        "Mo": 0.15,
+        "Zr": 0.15,
+        "V": 0.15
+      }
+    ]
+  },
+  {
+    "iteration": 35,
+    "stagnation_count": 25,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "f9cfc94b168dbc74",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "```json\n{\n  \"reasoning\": \"The search has converged on Co-Cr-Fe-Ni-based and refractory-heavy compositions without successfully combining the two strategies. The top compositions share a common motif of 3d transition metals + Mo + Ti, but the optimization has not explored intermetallic-forming systems with strong solid-solution and precipitation hardening synergy, nor has it tried B/Si/C micro-additions to the best-performing 3d+Mo+Ti matrix. New exploration should focus on: (1) Ni-Al-Ti-rich compositions that leverage L12 \u03b3' precipitation hardening, (2) Fe-Cr-Co-Ni matrices with deliberate W or Re additions for solid-solution strengthening, and (3) novel Hf/Zr-bearing 3d alloys where oxide/intermetallic dispersion strengthening is expected.\",\n  \"strengthening_mechanism\": \"Multi-mechanism hardening: L12 \u03b3' precipitation (Ni3Al/Ni3Ti), solid-solution strengthening via large atomic-radius mismatch elements (Hf, Zr, W, Re), and interstitial hardening via B/C micro-additions in BCC-rich matrices\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Ni\": 0.35, \"Al\": 0.15, \"Ti\": 0.20, \"Co\": 0.20, \"Mo\": 0.10},\n      \"rationale\": \"Ni-rich matrix with high Al+Ti targeting dense L12 \u03b3' Ni3(Al,Ti) precipitation; Co and Mo provide solid-solution strengthening of the \u03b3 matrix.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.30, \"Al\": 0.15, \"Ti\": 0.15, \"Co\": 0.15, \"Cr\": 0.15, \"Mo\": 0.10},\n      \"rationale\": \"Six-component \u03b3/\u03b3' alloy combining L12 precipitation with Cr for oxidation resistance and Mo for lattice misfit enhancement increasing precipitate coherency stress.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.30, \"Al\": 0.20, \"Ti\": 0.20, \"Fe\": 0.15, \"W\": 0.15},\n      \"rationale\": \"Al+Ti content pushed above \u03b3' solvus threshold; W substitutes for Mo providing stronger solid-solution drag and higher anti-phase boundary energy in precipitates.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.25, \"Cr\": 0.20, \"Fe\": 0.20, \"Ni\": 0.20, \"W\": 0.10, \"Hf\": 0.05},\n      \"rationale\": \"CoCrFeNi base with W for solid-solution strengthening and small Hf addition to form HfO2/Hf-rich grain-boundary precipitates, pinning grain boundaries and adding dispersion hardening.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.22, \"Cr\": 0.22, \"Fe\": 0.22, \"Ni\": 0.22, \"Zr\": 0.07, \"B\": 0.05},\n      \"rationale\": \"CoCrFeNi matrix with Zr+B additions targeting ZrB2 and M23(C,B)6-type precipitates at grain boundaries for precipitation and grain-boundary strengthening.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Co\": 0.20, \"Cr\": 0.20, \"Ni\": 0.15, \"Re\": 0.10, \"Mo\": 0.10},\n      \"rationale\": \"Re and Mo together provide anomalously strong solid-solution hardening via electronic interaction with the d-band; Fe-rich matrix stabilizes BCC/FCC duplex phases for Hall-Petch benefit.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.25, \"Al\": 0.20, \"Cr\": 0.20, \"Ti\": 0.15, \"Hf\": 0.10, \"Mo\": 0.10},\n      \"rationale\": \"Hf replaces Zr to provide larger atomic-size misfit in the Ni3Al L12 precipitate, increasing coherency strain and anti-phase boundary energy beyond conventional \u03b3' alloys.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.30, \"Cr\": 0.20, \"Mo\": 0.20, \"V\": 0.15, \"Si\": 0.10, \"B\": 0.05},\n      \"rationale\": \"Fe-Cr-Mo BCC solid-solution base with V for solution hardening; Si+B additions promote Laves-phase (Fe2Mo-type) and boride precipitation for dispersion strengthening.\"\n    },\n    {\n      \"composition\": {\"Ti\": 0.30, \"Cr\": 0.20, \"Al\": 0.20, \"Mo\": 0.15, \"V\": 0.15},\n      \"rationale\": \"Ti-rich BCC HEA targeting \u03c9-phase precipitation hardening on aging; Al stabilizes \u03b2-Ti matrix while Mo+V retard \u03c9 coarsening, maintaining fine precipitate distribution.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.20, \"Co\": 0.20, \"Al\": 0.20, \"W\": 0.20, \"Ta\": 0.10, \"Ti\": 0.10},\n      \"rationale\": \"Ni-Co-Al-W system mimics single-crystal superalloy chemistry; high W+Ta concentrations maximize \u03b3' anti-phase boundary energy while Ta partitions strongly to precipitates.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.20, \"Cr\": 0.20, \"Ni\": 0.15, \"Mo\": 0.15, \"Nb\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"Si and Nb together promote Laves-C14 and \u03b4-Ni3Nb precipitate co-formation in a CrFeNiMo matrix, combining multiple intermetallic precipitation channels for high hardness.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.25, \"Al\": 0.20, \"Mo\": 0.20, \"Ti\": 0.15, \"Zr\": 0.10, \"C\": 0.10},\n      \"rationale\": \"Co-Al-Mo matrix with Ti/Zr carbide-forming elements; C addition at 10 at% targets dense MC-type (TiC, ZrC) dispersion for interstitial + precipitation co-hardening in a novel base.\"\n    }\n  ]\n}\n```"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Co-Cr-Fe-Ni-based and refractory-heavy compositions without successfully combining the two strategies. The top compositions share a common motif of 3d transition metals + Mo + Ti, but the optimization has not explored intermetallic-forming systems with strong solid-solution and precipitation hardening synergy, nor has it tried B/Si/C micro-additions to the best-performing 3d+Mo+Ti matrix. New exploration should focus on: (1) Ni-Al-Ti-rich compositions that leverage L12 \u03b3' precipitation hardening, (2) Fe-Cr-Co-Ni matrices with deliberate W or Re additions for solid-solution strengthening, and (3) novel Hf/Zr-bearing 3d alloys where oxide/intermetallic dispersion strengthening is expected.",
+    "mechanism": "Multi-mechanism hardening: L12 \u03b3' precipitation (Ni3Al/Ni3Ti), solid-solution strengthening via large atomic-radius mismatch elements (Hf, Zr, W, Re), and interstitial hardening via B/C micro-additions in BCC-rich matrices",
+    "raw_candidates": [
+      {
+        "Ni": 0.35,
+        "Al": 0.15,
+        "Ti": 0.2,
+        "Co": 0.2,
+        "Mo": 0.1
+      },
+      {
+        "Ni": 0.3,
+        "Al": 0.15,
+        "Ti": 0.15,
+        "Co": 0.15,
+        "Cr": 0.15,
+        "Mo": 0.1
+      },
+      {
+        "Ni": 0.3,
+        "Al": 0.2,
+        "Ti": 0.2,
+        "Fe": 0.15,
+        "W": 0.15
+      },
+      {
+        "Co": 0.25,
+        "Cr": 0.2,
+        "Fe": 0.2,
+        "Ni": 0.2,
+        "W": 0.1,
+        "Hf": 0.05
+      },
+      {
+        "Co": 0.22,
+        "Cr": 0.22,
+        "Fe": 0.22,
+        "Ni": 0.22,
+        "Zr": 0.07,
+        "B": 0.05
+      },
+      {
+        "Fe": 0.25,
+        "Co": 0.2,
+        "Cr": 0.2,
+        "Ni": 0.15,
+        "Re": 0.1,
+        "Mo": 0.1
+      },
+      {
+        "Ni": 0.25,
+        "Al": 0.2,
+        "Cr": 0.2,
+        "Ti": 0.15,
+        "Hf": 0.1,
+        "Mo": 0.1
+      },
+      {
+        "Fe": 0.3,
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "V": 0.15,
+        "Si": 0.1,
+        "B": 0.05
+      },
+      {
+        "Ti": 0.3,
+        "Cr": 0.2,
+        "Al": 0.2,
+        "Mo": 0.15,
+        "V": 0.15
+      },
+      {
+        "Ni": 0.2,
+        "Co": 0.2,
+        "Al": 0.2,
+        "W": 0.2,
+        "Ta": 0.1,
+        "Ti": 0.1
+      },
+      {
+        "Fe": 0.2,
+        "Cr": 0.2,
+        "Ni": 0.15,
+        "Mo": 0.15,
+        "Nb": 0.15,
+        "Si": 0.15
+      },
+      {
+        "Co": 0.25,
+        "Al": 0.2,
+        "Mo": 0.2,
+        "Ti": 0.15,
+        "Zr": 0.1,
+        "C": 0.1
+      }
+    ]
+  },
+  {
+    "iteration": 38,
+    "stagnation_count": 28,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "98d0b56c2111637b",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has heavily saturated Co-Cr, Al-Ni, and Al-Co-Cr-Fe-Ni-Mo regions, which are typical FCC/BCC transition HEAs. The top compositions suggest that Mo and Ti additions to Fe-Co-Cr-Ni bases are beneficial, likely through solid-solution strengthening and L12/B2 precipitation. New regions should target (1) refractory-element-lean but intermetallic-forming compositions with Zr/Hf as strong misfit strengtheners, (2) Al-Ti-Zr-Nb combinations that promote B2+BCC duplex microstructures for high hardness, and (3) Si/B microalloyed variants that promote silicide or boride precipitate hardening in a ductile matrix \u2014 all distinct from the exhausted Mo-W-Ta-Nb refractory space and the Co-Cr FCC space.\",\n  \"strengthening_mechanism\": \"Primary mechanisms vary by candidate: (1) B2 + BCC dual-phase precipitation hardening in Al-Ti-Zr-Nb-X systems; (2) L12 and silicide/boride dispersion hardening in Si/B-containing Ni-Co-Fe matrices; (3) severe lattice distortion solid-solution hardening from large atomic-size-mismatch elements (Zr, Hf, Ta) in Fe/Ni/Co bases at moderate concentrations.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Al\": 0.20, \"Ti\": 0.20, \"Zr\": 0.15, \"Nb\": 0.15, \"Fe\": 0.15, \"Ni\": 0.15},\n      \"rationale\": \"Al and Ti promote B2 ordering while Zr and Nb expand the BCC lattice, creating a B2+BCC duplex that is expected to give high hardness via precipitation and solid-solution strengthening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Ti\": 0.20, \"Zr\": 0.20, \"Nb\": 0.20, \"Co\": 0.15},\n      \"rationale\": \"Zr-rich Al-Ti-Zr-Nb-Co composition promotes strong B2 precipitation in a BCC matrix with large lattice misfit from Zr, targeting high hardness through misfit-strain hardening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Ti\": 0.15, \"Zr\": 0.15, \"Nb\": 0.15, \"Mo\": 0.15, \"Fe\": 0.25},\n      \"rationale\": \"Fe-rich base with balanced B2-forming elements (Al, Ti) and BCC stabilizers (Nb, Mo, Zr) should yield a fine-scale B2-in-BCC microstructure with strong precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.30, \"Co\": 0.20, \"Fe\": 0.15, \"Si\": 0.15, \"Zr\": 0.10, \"Al\": 0.10},\n      \"rationale\": \"Si and Zr additions to a Ni-Co-Fe FCC base are expected to form Ni3Si (L12) and Ni3Zr-type precipitates, providing dispersion hardening substantially above the pure FCC baseline.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.35, \"Co\": 0.20, \"Fe\": 0.15, \"Si\": 0.20, \"Ti\": 0.10},\n      \"rationale\": \"High Si content in Ni-Co-Fe matrix promotes Ni3Si (L12) precipitate formation; Ti substitutes into precipitates and increases anti-phase boundary energy for stronger precipitation hardening.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.25, \"Fe\": 0.20, \"Cr\": 0.15, \"Si\": 0.20, \"Mo\": 0.10, \"Ni\": 0.10},\n      \"rationale\": \"Si drives Co-Fe silicide precipitation while Mo provides solid-solution strengthening; this Si-rich Co-Fe-Cr system is unexplored and physically distinct from the exhausted Co-Cr FCC space.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.25, \"Fe\": 0.20, \"Cr\": 0.15, \"B\": 0.05, \"Si\": 0.15, \"Zr\": 0.20},\n      \"rationale\": \"B and Zr together drive boride and silicide precipitate formation in the Ni-Fe-Cr matrix; B also segregates to grain boundaries enhancing cohesion, and the combination is physically unexplored here.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.30, \"Cr\": 0.20, \"Ni\": 0.15, \"Hf\": 0.15, \"Si\": 0.15, \"Al\": 0.05},\n      \"rationale\": \"Hf has extreme atomic size mismatch in Fe-Cr-Ni; combined with Si for silicide precipitation hardening (Fe2Hf Laves-type phases) and Al for BCC stabilization, this targets a dual solid-solution + Laves precipitate hardening regime.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.20, \"Ni\": 0.20, \"Fe\": 0.20, \"Hf\": 0.20, \"Ti\": 0.20},\n      \"rationale\": \"Equal-molar Co-Ni-Fe-Hf-Ti promotes Laves-phase (Co,Ni,Fe)2Hf and L12 Co3Ti co-precipitation in an FCC matrix, a region entirely unexplored in the current run.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Cr\": 0.15, \"Fe\": 0.15, \"Ni\": 0.15, \"Zr\": 0.20, \"Ti\": 0.15},\n      \"rationale\": \"Increasing Zr content relative to explored Al-Cr-Fe-Ni-Ti compositions shifts the phase stability toward B2+BCC with strong Zr-induced lattice distortion, expected to break the 749 HV ceiling via enhanced misfit hardening.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.20, \"Cr\": 0.15, \"Fe\": 0.15, \"Ni\": 0.15, \"V\": 0.15, \"Zr\": 0.20},\n      \"rationale\": \"Zr substituted into the Co-Cr-Fe-Ni base with V provides massive atomic-size mismatch strengthening; V stabilizes a mixed BCC/FCC microstructure while Zr drives Laves precipitate hardening.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Ni\": 0.20, \"Ti\": 0.20, \"Hf\": 0.15, \"V\": 0.10, \"Al\": 0.10},\n      \"rationale\": \"Hf and Ti synergistically form (Fe,Ni)2(Hf,Ti) Laves phases while Al and V tune the BCC/FCC ratio; this Hf-Ti-V combination in a Fe-Ni matrix is physically motivated and spatially isolated from all explored clusters.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has heavily saturated Co-Cr, Al-Ni, and Al-Co-Cr-Fe-Ni-Mo regions, which are typical FCC/BCC transition HEAs. The top compositions suggest that Mo and Ti additions to Fe-Co-Cr-Ni bases are beneficial, likely through solid-solution strengthening and L12/B2 precipitation. New regions should target (1) refractory-element-lean but intermetallic-forming compositions with Zr/Hf as strong misfit strengtheners, (2) Al-Ti-Zr-Nb combinations that promote B2+BCC duplex microstructures for high hardness, and (3) Si/B microalloyed variants that promote silicide or boride precipitate hardening in a ductile matrix \u2014 all distinct from the exhausted Mo-W-Ta-Nb refractory space and the Co-Cr FCC space.",
+    "mechanism": "Primary mechanisms vary by candidate: (1) B2 + BCC dual-phase precipitation hardening in Al-Ti-Zr-Nb-X systems; (2) L12 and silicide/boride dispersion hardening in Si/B-containing Ni-Co-Fe matrices; (3) severe lattice distortion solid-solution hardening from large atomic-size-mismatch elements (Zr, Hf, Ta) in Fe/Ni/Co bases at moderate concentrations.",
+    "raw_candidates": [
+      {
+        "Al": 0.2,
+        "Ti": 0.2,
+        "Zr": 0.15,
+        "Nb": 0.15,
+        "Fe": 0.15,
+        "Ni": 0.15
+      },
+      {
+        "Al": 0.25,
+        "Ti": 0.2,
+        "Zr": 0.2,
+        "Nb": 0.2,
+        "Co": 0.15
+      },
+      {
+        "Al": 0.15,
+        "Ti": 0.15,
+        "Zr": 0.15,
+        "Nb": 0.15,
+        "Mo": 0.15,
+        "Fe": 0.25
+      },
+      {
+        "Ni": 0.3,
+        "Co": 0.2,
+        "Fe": 0.15,
+        "Si": 0.15,
+        "Zr": 0.1,
+        "Al": 0.1
+      },
+      {
+        "Ni": 0.35,
+        "Co": 0.2,
+        "Fe": 0.15,
+        "Si": 0.2,
+        "Ti": 0.1
+      },
+      {
+        "Co": 0.25,
+        "Fe": 0.2,
+        "Cr": 0.15,
+        "Si": 0.2,
+        "Mo": 0.1,
+        "Ni": 0.1
+      },
+      {
+        "Ni": 0.25,
+        "Fe": 0.2,
+        "Cr": 0.15,
+        "B": 0.05,
+        "Si": 0.15,
+        "Zr": 0.2
+      },
+      {
+        "Fe": 0.3,
+        "Cr": 0.2,
+        "Ni": 0.15,
+        "Hf": 0.15,
+        "Si": 0.15,
+        "Al": 0.05
+      },
+      {
+        "Co": 0.2,
+        "Ni": 0.2,
+        "Fe": 0.2,
+        "Hf": 0.2,
+        "Ti": 0.2
+      },
+      {
+        "Al": 0.2,
+        "Cr": 0.15,
+        "Fe": 0.15,
+        "Ni": 0.15,
+        "Zr": 0.2,
+        "Ti": 0.15
+      },
+      {
+        "Co": 0.2,
+        "Cr": 0.15,
+        "Fe": 0.15,
+        "Ni": 0.15,
+        "V": 0.15,
+        "Zr": 0.2
+      },
+      {
+        "Fe": 0.25,
+        "Ni": 0.2,
+        "Ti": 0.2,
+        "Hf": 0.15,
+        "V": 0.1,
+        "Al": 0.1
+      }
+    ]
+  },
+  {
+    "iteration": 41,
+    "stagnation_count": 31,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "e6ef6dc6dea7a954",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The optimization has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar-like systems around HV~750. The search has heavily sampled transition-metal solid-solution alloys and Al-containing FCC/BCC mixtures but has largely neglected intermetallic-forming systems with refractory elements combined with strong B2/Laves-phase formers (Al, Zr, Hf) at non-equimolar ratios designed to precipitate hard intermetallics. New regions to explore: (1) Al-rich Laves/B2 precipitate-strengthened Hf/Zr/Ta systems, (2) boride/silicide-reinforced refractory HEAs, and (3) W-Mo-Ta-Cr-based BCC solid solutions with Si addition for solid-solution + silicide strengthening.\",\n  \"strengthening_mechanism\": \"Primary: intermetallic precipitation hardening (B2, Laves C14/C15, silicide phases) combined with BCC solid-solution strengthening from large atomic-size misfit elements (Hf, Zr, Ta, W); secondary: grain-boundary hardening from fine as-cast microstructures in high-melting-point refractory systems.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Al\": 0.30, \"Hf\": 0.20, \"Ni\": 0.20, \"Ti\": 0.15, \"Zr\": 0.15},\n      \"rationale\": \"Al-Ni-rich matrix promotes B2-NiAl precipitation while Hf and Zr create large lattice distortion and Laves C14 phases, expected to yield high hardness via dual precipitate strengthening.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.30, \"Ta\": 0.25, \"W\": 0.20, \"Si\": 0.15, \"Cr\": 0.10},\n      \"rationale\": \"BCC refractory Mo-Ta-W backbone with Si additions to precipitate hard Mo/Ta silicides (M5Si3-type) at grain boundaries, combining solid-solution and silicide strengthening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Hf\": 0.25, \"Ni\": 0.25, \"Mo\": 0.15, \"Zr\": 0.10},\n      \"rationale\": \"High Hf content encourages Laves phase (HfNi, Hf2Ni) precipitation in an Al-Ni B2 matrix, with Mo in solid solution raising matrix hardness.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Mo\": 0.25, \"Si\": 0.20, \"W\": 0.20, \"Ta\": 0.10},\n      \"rationale\": \"Cr-Mo-W BCC solid solution with high Si to form multiple hard silicide dispersoids (Cr3Si, Mo3Si, W3Si2), analogous to Mo-Si-B system strengthening.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.25, \"Hf\": 0.25, \"Al\": 0.20, \"Ni\": 0.20, \"Cr\": 0.10},\n      \"rationale\": \"Co-Hf promotes hard Co2Hf Laves phase within an Al-Ni B2 matrix, a combination unexplored in the current run, targeting intermetallic composite hardening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"Hf\": 0.20},\n      \"rationale\": \"Five-element equimolar BCC alloy with Ta and Hf providing maximum atomic-size misfit for solid-solution hardening alongside potential Al-Ta intermetallic precipitates.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.30, \"Al\": 0.20, \"Hf\": 0.20, \"Ti\": 0.15, \"Ta\": 0.15},\n      \"rationale\": \"Ni3Al-type L12 ordered precipitates reinforced by Hf and Ta, which are known to substitute into the Ni3Al structure and dramatically increase anti-phase boundary energy.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.20, \"W\": 0.20, \"Cr\": 0.20, \"Hf\": 0.20, \"Si\": 0.20},\n      \"rationale\": \"Equimolar refractory BCC alloy with maximum Si content to saturate the matrix and drive silicide precipitation; Hf-Si system forms extremely hard HfSi2.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.30, \"Ti\": 0.30, \"Nb\": 0.20, \"Mo\": 0.10, \"Hf\": 0.10},\n      \"rationale\": \"Al-Ti rich composition targeting the Ti3Al (D019) and Al3Ti (D022) intermetallic field with Nb for ductility correction and Hf/Mo for solid-solution hardening of the matrix.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.20, \"Cr\": 0.20, \"Mo\": 0.20, \"Si\": 0.20, \"Ta\": 0.20},\n      \"rationale\": \"Novel Co-Cr-Mo alloy backbone (bio-inspired superalloy analog) with Si and Ta promoting hard silicide and Cr2Ta Laves precipitation, fully unexplored in the run.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Cr\": 0.25, \"Mo\": 0.20, \"Si\": 0.15, \"Ta\": 0.15},\n      \"rationale\": \"Fe-Cr ferritic matrix with Si and Ta forming Fe2Ta Laves-phase dispersoids and FeSi intermetallics, targeting dual-phase hardening in an as-cast microstructure.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.25, \"Al\": 0.20, \"Co\": 0.20, \"Ta\": 0.20, \"Hf\": 0.15},\n      \"rationale\": \"Ni-Co superalloy-inspired composition with heavy Ta and Hf additions to create dense coherent L12 precipitates with high misfit strain and elevated APB energy for maximum precipitation hardening.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The optimization has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar-like systems around HV~750. The search has heavily sampled transition-metal solid-solution alloys and Al-containing FCC/BCC mixtures but has largely neglected intermetallic-forming systems with refractory elements combined with strong B2/Laves-phase formers (Al, Zr, Hf) at non-equimolar ratios designed to precipitate hard intermetallics. New regions to explore: (1) Al-rich Laves/B2 precipitate-strengthened Hf/Zr/Ta systems, (2) boride/silicide-reinforced refractory HEAs, and (3) W-Mo-Ta-Cr-based BCC solid solutions with Si addition for solid-solution + silicide strengthening.",
+    "mechanism": "Primary: intermetallic precipitation hardening (B2, Laves C14/C15, silicide phases) combined with BCC solid-solution strengthening from large atomic-size misfit elements (Hf, Zr, Ta, W); secondary: grain-boundary hardening from fine as-cast microstructures in high-melting-point refractory systems.",
+    "raw_candidates": [
+      {
+        "Al": 0.3,
+        "Hf": 0.2,
+        "Ni": 0.2,
+        "Ti": 0.15,
+        "Zr": 0.15
+      },
+      {
+        "Mo": 0.3,
+        "Ta": 0.25,
+        "W": 0.2,
+        "Si": 0.15,
+        "Cr": 0.1
+      },
+      {
+        "Al": 0.25,
+        "Hf": 0.25,
+        "Ni": 0.25,
+        "Mo": 0.15,
+        "Zr": 0.1
+      },
+      {
+        "Cr": 0.25,
+        "Mo": 0.25,
+        "Si": 0.2,
+        "W": 0.2,
+        "Ta": 0.1
+      },
+      {
+        "Co": 0.25,
+        "Hf": 0.25,
+        "Al": 0.2,
+        "Ni": 0.2,
+        "Cr": 0.1
+      },
+      {
+        "Al": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Hf": 0.2
+      },
+      {
+        "Ni": 0.3,
+        "Al": 0.2,
+        "Hf": 0.2,
+        "Ti": 0.15,
+        "Ta": 0.15
+      },
+      {
+        "Mo": 0.2,
+        "W": 0.2,
+        "Cr": 0.2,
+        "Hf": 0.2,
+        "Si": 0.2
+      },
+      {
+        "Al": 0.3,
+        "Ti": 0.3,
+        "Nb": 0.2,
+        "Mo": 0.1,
+        "Hf": 0.1
+      },
+      {
+        "Co": 0.2,
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Si": 0.2,
+        "Ta": 0.2
+      },
+      {
+        "Fe": 0.25,
+        "Cr": 0.25,
+        "Mo": 0.2,
+        "Si": 0.15,
+        "Ta": 0.15
+      },
+      {
+        "Ni": 0.25,
+        "Al": 0.2,
+        "Co": 0.2,
+        "Ta": 0.2,
+        "Hf": 0.15
+      }
+    ]
+  },
+  {
+    "iteration": 44,
+    "stagnation_count": 34,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "a4a0a3621b1f7c04",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar and Al-Cr-Fe-Ni-Ti-Mo compositions that rely on solid-solution hardening of FCC/BCC dual-phase systems. Unexplored territory with high hardness potential includes refractory BCC HEAs with intermetallic-forming additions (e.g., Ta, W, Re combined with Al and Hf/Zr for Laves or B2 precipitation hardening), and boride/carbide-forming systems with Si or C additions that generate hard second phases in situ. The budget is nearly exhausted, so each candidate targets a distinct, physically motivated mechanism not yet sampled.\",\n  \"strengthening_mechanism\": \"Primary mechanisms vary by candidate: (1) B2 + BCC dual-phase precipitation in Al-containing refractory HEAs; (2) Laves phase dispersion hardening in Hf/Zr-rich refractory systems; (3) in-situ silicide/boride formation for hard-particle composite hardening; (4) \u03c3-phase or \u03bc-phase precipitation in Mo-Re-W-Cr-Fe systems; (5) massive solid-solution hardening in equiatomic 4-element refractory BCC HEAs with high misfit.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Al\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"W\": 0.20, \"Fe\": 0.20},\n      \"rationale\": \"Equimolar Al-Ta-Mo-W-Fe targets a single-phase BCC refractory HEA with strong solid-solution hardening from large atomic-size misfit (Ta, W) and Al-driven BCC stabilization; Ta and W are among the highest-melting strengtheners yet unexplored together with Al.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.25, \"Ta\": 0.20, \"Cr\": 0.20, \"Mo\": 0.20, \"Ni\": 0.15},\n      \"rationale\": \"Al-Ni pairing promotes B2 precipitate formation while Ta and Mo provide refractory solid-solution hardening in the BCC matrix; Cr addition improves oxidation resistance and may seed \u03c3-phase particles for additional dispersion hardening.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Hf\": 0.20, \"Ta\": 0.20, \"Mo\": 0.20, \"W\": 0.25},\n      \"rationale\": \"Hf-Ta-Mo-W refractory core with Al addition targets Laves-phase (C14/C15) formation from Hf interacting with Al, superimposed on a hard BCC solid-solution matrix with very high lattice distortion from W and Hf.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Mo\": 0.20, \"Re\": 0.20, \"W\": 0.20, \"Fe\": 0.20},\n      \"rationale\": \"Equimolar Cr-Mo-Re-W-Fe targets \u03c3-phase and \u03bc-phase precipitation in a BCC/mixed matrix; Re is well known to cause the rhenium-effect solid-solution hardening in W-based alloys, and this combination has not been sampled.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.20, \"Re\": 0.25, \"W\": 0.25, \"Cr\": 0.15, \"Co\": 0.15},\n      \"rationale\": \"Re-rich Mo-W-Re-Cr-Co composition exploits the strong solid-solution hardening of Re in BCC metals and potential \u03c3/\u03bc-phase precipitation; Re content is higher than any previous query to maximize the rhenium strengthening effect.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.10, \"Cr\": 0.20, \"Mo\": 0.15, \"Si\": 0.15, \"W\": 0.20, \"Fe\": 0.20},\n      \"rationale\": \"Si addition to a Cr-Mo-W-Fe-Al system is expected to form in-situ Fe-Si and Mo-Si silicide hard particles via eutectic solidification, providing composite hardening on top of BCC solid-solution strengthening; Si-containing HEAs are largely unexplored in this run.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Si\": 0.15, \"Co\": 0.20, \"Cr\": 0.20, \"Fe\": 0.20, \"Ni\": 0.10},\n      \"rationale\": \"Si and Al co-addition to a Co-Cr-Fe-Ni base promotes both B2 (AlNi) and silicide (Cr-Si, Fe-Si) nanoprecipitation in a FCC+BCC dual-phase matrix, a region not yet explored despite the many Co-Cr queries.\"\n    },\n    {\n      \"composition\": {\"Hf\": 0.25, \"Ta\": 0.25, \"W\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Quaternary equimolar Hf-Ta-W-Mo is a pure refractory BCC HEA with the maximum possible atomic-size misfit (Hf being largest), targeting extreme solid-solution hardening without any diluting FCC-stabilizer; four-element refractory quartets are underexplored here.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Nb\": 0.20, \"Ta\": 0.20, \"W\": 0.20, \"Zr\": 0.20},\n      \"rationale\": \"Al-Nb-Ta-W-Zr equimolar refractory HEA is predicted to form a dual BCC + Laves phase (Zr/Hf-Al Laves) microstructure with high hardness; Al-Zr and Al-Nb interactions drive intermetallic precipitation that has not been queried in this run.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.15, \"Co\": 0.15, \"Fe\": 0.15, \"Re\": 0.20, \"W\": 0.20, \"Mo\": 0.15},\n      \"rationale\": \"Re-W-Mo refractory core combined with Al-Co-Fe FCC stabilizers targets a BCC + B2 duplex microstructure with simultaneous solid-solution (Re, W) and precipitation (B2-CoAl) hardening; Re has not been paired with Co-Fe-Al in any prior query.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.20, \"Fe\": 0.20, \"Mo\": 0.20, \"Si\": 0.20, \"W\": 0.20},\n      \"rationale\": \"Equimolar Cr-Fe-Mo-Si-W maximizes silicide-forming tendency (Mo5Si3, FeSi, Cr3Si) to create a hard composite with a BCC metallic binder, analogous to cemented carbide hardening but fully HEA-based; high Si content (0.20) is unprecedented in this run.\"\n    },\n    {\n      \"composition\": {\"Al\": 0.20, \"Cr\": 0.15, \"Re\": 0.20, \"Ta\": 0.20, \"Ni\": 0.25},\n      \"rationale\": \"Ni-Al-Re-Ta-Cr mimics the \u03b3/\u03b3' architecture of superalloys in HEA form: Al-Ni drives L12 \u03b3' precipitation, Ta partitions to \u03b3' for anti-phase boundary hardening, and Re provides solid-solution hardening of the FCC \u03b3 matrix, a superalloy-inspired strengthening paradigm not yet tried.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Co-Cr-Fe-Mo-Ni-Ti equimolar and Al-Cr-Fe-Ni-Ti-Mo compositions that rely on solid-solution hardening of FCC/BCC dual-phase systems. Unexplored territory with high hardness potential includes refractory BCC HEAs with intermetallic-forming additions (e.g., Ta, W, Re combined with Al and Hf/Zr for Laves or B2 precipitation hardening), and boride/carbide-forming systems with Si or C additions that generate hard second phases in situ. The budget is nearly exhausted, so each candidate targets a distinct, physically motivated mechanism not yet sampled.",
+    "mechanism": "Primary mechanisms vary by candidate: (1) B2 + BCC dual-phase precipitation in Al-containing refractory HEAs; (2) Laves phase dispersion hardening in Hf/Zr-rich refractory systems; (3) in-situ silicide/boride formation for hard-particle composite hardening; (4) \u03c3-phase or \u03bc-phase precipitation in Mo-Re-W-Cr-Fe systems; (5) massive solid-solution hardening in equiatomic 4-element refractory BCC HEAs with high misfit.",
+    "raw_candidates": [
+      {
+        "Al": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "W": 0.2,
+        "Fe": 0.2
+      },
+      {
+        "Al": 0.25,
+        "Ta": 0.2,
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Ni": 0.15
+      },
+      {
+        "Al": 0.15,
+        "Hf": 0.2,
+        "Ta": 0.2,
+        "Mo": 0.2,
+        "W": 0.25
+      },
+      {
+        "Cr": 0.2,
+        "Mo": 0.2,
+        "Re": 0.2,
+        "W": 0.2,
+        "Fe": 0.2
+      },
+      {
+        "Mo": 0.2,
+        "Re": 0.25,
+        "W": 0.25,
+        "Cr": 0.15,
+        "Co": 0.15
+      },
+      {
+        "Al": 0.1,
+        "Cr": 0.2,
+        "Mo": 0.15,
+        "Si": 0.15,
+        "W": 0.2,
+        "Fe": 0.2
+      },
+      {
+        "Al": 0.15,
+        "Si": 0.15,
+        "Co": 0.2,
+        "Cr": 0.2,
+        "Fe": 0.2,
+        "Ni": 0.1
+      },
+      {
+        "Hf": 0.25,
+        "Ta": 0.25,
+        "W": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Al": 0.2,
+        "Nb": 0.2,
+        "Ta": 0.2,
+        "W": 0.2,
+        "Zr": 0.2
+      },
+      {
+        "Al": 0.15,
+        "Co": 0.15,
+        "Fe": 0.15,
+        "Re": 0.2,
+        "W": 0.2,
+        "Mo": 0.15
+      },
+      {
+        "Cr": 0.2,
+        "Fe": 0.2,
+        "Mo": 0.2,
+        "Si": 0.2,
+        "W": 0.2
+      },
+      {
+        "Al": 0.2,
+        "Cr": 0.15,
+        "Re": 0.2,
+        "Ta": 0.2,
+        "Ni": 0.25
+      }
+    ]
+  },
+  {
+    "iteration": 47,
+    "stagnation_count": 37,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "1461802434e06a86",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has heavily explored Co-Cr, Al-Ni, Al-Co, and Al-Cr regions with equiatomic-ish compositions and moderate refractory content, converging around HV~750 without breakthrough. Critically, boron (B), carbon (C), silicon (Si), rhenium (Re), and vanadium (V) have been largely untouched as hardening additions, and interstitial strengthening (B, C) combined with solid-solution hardening from Re or Si in a transition-metal matrix represents a completely unexplored mechanism. Additionally, W-rich and Re-containing compositions with Co-Cr or Fe-Ni matrices have not been tried despite W and Re being potent solid-solution strengtheners with high melting points.\",\n  \"strengthening_mechanism\": \"Interstitial hardening (B and C in octahedral sites causing lattice distortion and carbide/boride precipitation), solid-solution strengthening from high atomic-size-mismatch elements (Re, W, Si), and precipitation of hard second phases (Cr-borides, Mo-carbides, sigma/Laves phases) in multi-principal-element matrices.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Co\": 0.30, \"Cr\": 0.30, \"Fe\": 0.20, \"W\": 0.15, \"Si\": 0.05},\n      \"rationale\": \"W and Si co-addition to Co-Cr-Fe matrix provides strong solid-solution hardening and promotes silicide/W-rich phase precipitation beyond what pure Co-Cr achieves.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Fe\": 0.25, \"Co\": 0.20, \"Re\": 0.15, \"Mo\": 0.15},\n      \"rationale\": \"Re is the strongest solid-solution hardener in transition-metal alloys; pairing it with Mo in a Co-Cr-Fe matrix should push hardness well above the current 750 HV plateau.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.28, \"Cr\": 0.28, \"Ni\": 0.20, \"Re\": 0.12, \"W\": 0.12},\n      \"rationale\": \"Re+W dual addition to the classic CoCrNi matrix exploits the cocktail effect of two high-misfit refractory solutes for maximum solid-solution strengthening.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.30, \"Cr\": 0.25, \"Mo\": 0.20, \"Si\": 0.15, \"B\": 0.10},\n      \"rationale\": \"B interstitial addition with Si to an Fe-Cr-Mo matrix promotes Cr/Mo boride and silicide precipitation, a classic route to ultrahigh hardness in tool-steel-inspired HEAs.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.25, \"Cr\": 0.25, \"Fe\": 0.20, \"Mo\": 0.15, \"B\": 0.15},\n      \"rationale\": \"High B content (0.15) in a Co-Cr-Fe-Mo matrix is expected to precipitate a dense network of hard borides (CrB, Mo2B) within the FCC/BCC matrix, dramatically increasing hardness.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.25, \"Cr\": 0.25, \"Fe\": 0.20, \"Mo\": 0.15, \"C\": 0.15},\n      \"rationale\": \"C interstitial in a Ni-Cr-Fe-Mo matrix promotes MC-type carbide (Mo-rich) precipitation analogous to superalloy hardening, targeting HV >800 through dispersion strengthening.\"\n    },\n    {\n      \"composition\": {\"Co\": 0.20, \"Cr\": 0.20, \"W\": 0.20, \"Re\": 0.20, \"Si\": 0.20},\n      \"rationale\": \"Equiatomic Co-Cr-W-Re-Si explores a refractory-rich 5-element space combining two top solid-solution hardeners (W, Re) with Si for potential silicide precipitation.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.25, \"Cr\": 0.20, \"Co\": 0.20, \"V\": 0.20, \"B\": 0.15},\n      \"rationale\": \"V forms hard VB and V2B borides; combined with Cr and Fe borides in an FCC/BCC matrix this composition targets boride-dispersion hardening not yet explored.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"Cr\": 0.25, \"Co\": 0.20, \"Si\": 0.15, \"Re\": 0.15},\n      \"rationale\": \"Mo-Cr-Si chemistry promotes Laves-phase (Mo5Si3, CrSi2) and sigma precipitation while Re provides additional solid-solution strengthening in a hard intermetallic-reinforced matrix.\"\n    },\n    {\n      \"composition\": {\"Fe\": 0.30, \"Co\": 0.20, \"Cr\": 0.20, \"W\": 0.15, \"C\": 0.15},\n      \"rationale\": \"C addition to an Fe-Co-Cr-W matrix mimics high-speed-steel chemistry in HEA form, expecting W-carbide (WC, W2C) and Cr-carbide dispersion for very high as-cast hardness.\"\n    },\n    {\n      \"composition\": {\"Ni\": 0.20, \"Co\": 0.20, \"Cr\": 0.20, \"Re\": 0.20, \"B\": 0.20},\n      \"rationale\": \"Equiatomic Ni-Co-Cr-Re-B uses maximum B content to saturate the matrix with boride precipitates while Re provides the highest atomic-size-mismatch solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Mo\": 0.20, \"V\": 0.20, \"Fe\": 0.20, \"B\": 0.15},\n      \"rationale\": \"Ternary boride-forming elements (Cr, Mo, V) with high B content in an Fe base targets multi-phase boride precipitation (CrB2, MoB, VB2) for synergistic dispersion hardening.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has heavily explored Co-Cr, Al-Ni, Al-Co, and Al-Cr regions with equiatomic-ish compositions and moderate refractory content, converging around HV~750 without breakthrough. Critically, boron (B), carbon (C), silicon (Si), rhenium (Re), and vanadium (V) have been largely untouched as hardening additions, and interstitial strengthening (B, C) combined with solid-solution hardening from Re or Si in a transition-metal matrix represents a completely unexplored mechanism. Additionally, W-rich and Re-containing compositions with Co-Cr or Fe-Ni matrices have not been tried despite W and Re being potent solid-solution strengtheners with high melting points.",
+    "mechanism": "Interstitial hardening (B and C in octahedral sites causing lattice distortion and carbide/boride precipitation), solid-solution strengthening from high atomic-size-mismatch elements (Re, W, Si), and precipitation of hard second phases (Cr-borides, Mo-carbides, sigma/Laves phases) in multi-principal-element matrices.",
+    "raw_candidates": [
+      {
+        "Co": 0.3,
+        "Cr": 0.3,
+        "Fe": 0.2,
+        "W": 0.15,
+        "Si": 0.05
+      },
+      {
+        "Cr": 0.25,
+        "Fe": 0.25,
+        "Co": 0.2,
+        "Re": 0.15,
+        "Mo": 0.15
+      },
+      {
+        "Co": 0.28,
+        "Cr": 0.28,
+        "Ni": 0.2,
+        "Re": 0.12,
+        "W": 0.12
+      },
+      {
+        "Fe": 0.3,
+        "Cr": 0.25,
+        "Mo": 0.2,
+        "Si": 0.15,
+        "B": 0.1
+      },
+      {
+        "Co": 0.25,
+        "Cr": 0.25,
+        "Fe": 0.2,
+        "Mo": 0.15,
+        "B": 0.15
+      },
+      {
+        "Ni": 0.25,
+        "Cr": 0.25,
+        "Fe": 0.2,
+        "Mo": 0.15,
+        "C": 0.15
+      },
+      {
+        "Co": 0.2,
+        "Cr": 0.2,
+        "W": 0.2,
+        "Re": 0.2,
+        "Si": 0.2
+      },
+      {
+        "Fe": 0.25,
+        "Cr": 0.2,
+        "Co": 0.2,
+        "V": 0.2,
+        "B": 0.15
+      },
+      {
+        "Mo": 0.25,
+        "Cr": 0.25,
+        "Co": 0.2,
+        "Si": 0.15,
+        "Re": 0.15
+      },
+      {
+        "Fe": 0.3,
+        "Co": 0.2,
+        "Cr": 0.2,
+        "W": 0.15,
+        "C": 0.15
+      },
+      {
+        "Ni": 0.2,
+        "Co": 0.2,
+        "Cr": 0.2,
+        "Re": 0.2,
+        "B": 0.2
+      },
+      {
+        "Cr": 0.25,
+        "Mo": 0.2,
+        "V": 0.2,
+        "Fe": 0.2,
+        "B": 0.15
+      }
+    ]
+  },
+  {
+    "iteration": 50,
+    "stagnation_count": 40,
+    "best_hv": 749.7148055555558,
+    "audit": {
+      "prompt_hash": "673b64136394720f",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has heavily explored Co-Cr, Al-Ni, and Mo-Nb systems with near-equimolar distributions, converging around HV~750 without breakthrough. Refractory-element-rich compositions (Ta, W, Mo, Nb) with intermetallic-forming additions like B, Si, and C have been largely untouched as primary drivers, despite their known role in solid-solution hardening and precipitation of hard phases. The new strategy targets: (1) boride/carbide precipitation hardening via B and C additions in refractory-transition metal matrices, (2) Si-induced ordering and \u03c3-phase formation in Cr-rich systems, and (3) high-lattice-distortion refractory HEAs centered on W-Ta-Mo with strong misfit strengthening.\",\n  \"strengthening_mechanism\": \"Combined solid-solution lattice distortion (atomic size mismatch in refractory matrices), precipitation of hard intermetallic/boride/carbide phases, and order strengthening via B/Si/C additions\",\n  \"candidates\": [\n    {\n      \"composition\": {\"W\": 0.25, \"Mo\": 0.25, \"Cr\": 0.20, \"B\": 0.15, \"Si\": 0.15},\n      \"rationale\": \"W-Mo solid-solution base with B and Si driving formation of hard boride and silicide precipitates, maximizing precipitation hardening in a refractory matrix.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.25, \"W\": 0.25, \"Mo\": 0.20, \"Cr\": 0.20, \"B\": 0.10},\n      \"rationale\": \"Heavy refractory Ta-W-Mo backbone with large atomic size mismatch for severe lattice distortion strengthening, augmented by boride precipitation at grain boundaries.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.30, \"Fe\": 0.20, \"Mo\": 0.20, \"Si\": 0.20, \"B\": 0.10},\n      \"rationale\": \"Si and B additions to a Cr-Fe-Mo matrix target \u03c3-phase and boride co-precipitation, both known to dramatically increase hardness in stainless-type alloys.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Ta\": 0.20, \"V\": 0.20, \"Cr\": 0.20, \"Si\": 0.20},\n      \"rationale\": \"Equimolar refractory W-Ta-V-Cr with Si introduced to promote hard silicide (e.g., Cr3Si, V5Si3) precipitation within a high-entropy solid solution.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.25, \"W\": 0.20, \"Nb\": 0.20, \"Si\": 0.20, \"B\": 0.15},\n      \"rationale\": \"Mo-W-Nb matrix with high Si+B to form MoSi2-type and Nb boride hard phases, exploiting ceramic-like precipitate strengthening in a ductile HEA matrix.\"\n    },\n    {\n      \"composition\": {\"Cr\": 0.25, \"Co\": 0.20, \"Fe\": 0.20, \"C\": 0.20, \"Si\": 0.15},\n      \"rationale\": \"High-C addition to a Co-Cr-Fe matrix promotes M7C3/M23C6 carbide precipitation; Si refines carbide morphology and provides additional solid-solution strengthening.\"\n    },\n    {\n      \"composition\": {\"Ta\": 0.30, \"Cr\": 0.25, \"Mo\": 0.20, \"Si\": 0.15, \"B\": 0.10},\n      \"rationale\": \"Ta-rich refractory composition with Cr and Mo for solid solution, plus Si and B to nucleate TaSi2 and TaB2 hard precipitates with high intrinsic hardness.\"\n    },\n    {\n      \"composition\": {\"W\": 0.25, \"Re\": 0.20, \"Mo\": 0.20, \"Cr\": 0.20, \"B\": 0.15},\n      \"rationale\": \"Re addition to W-Mo-Cr introduces the 'rhenium effect' (solid-solution softening resistance) while B precipitates as hard ReB2/CrB along grain boundaries.\"\n    },\n    {\n      \"composition\": {\"V\": 0.25, \"Cr\": 0.25, \"Mo\": 0.20, \"Si\": 0.20, \"C\": 0.10},\n      \"rationale\": \"V-Cr-Mo carbide/silicide forming system where V4C3 and Cr-Si compounds co-precipitate, exploiting high thermodynamic stability of vanadium carbides.\"\n    },\n    {\n      \"composition\": {\"Nb\": 0.25, \"Mo\": 0.20, \"Cr\": 0.20, \"Si\": 0.20, \"B\": 0.15},\n      \"rationale\": \"Nb drives NbB2 and Nb5Si3 precipitation (both HV > 1500), combined with Mo-Cr solid solution strengthening for a hard composite microstructure.\"\n    },\n    {\n      \"composition\": {\"W\": 0.20, \"Ta\": 0.20, \"Cr\": 0.20, \"Fe\": 0.20, \"B\": 0.20},\n      \"rationale\": \"High boron content (0.20) in a W-Ta-Cr-Fe refractory matrix targets a boride-saturated microstructure, where the HEA matrix pins hard diboride particles.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.20, \"W\": 0.20, \"Mo\": 0.20, \"Si\": 0.20, \"Cr\": 0.20},\n      \"rationale\": \"Equimolar Re-W-Mo-Si-Cr leverages Re solid-solution strengthening alongside MoSi2/WSi2 silicide precipitation in a complex refractory entropy-stabilized matrix.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has heavily explored Co-Cr, Al-Ni, and Mo-Nb systems with near-equimolar distributions, converging around HV~750 without breakthrough. Refractory-element-rich compositions (Ta, W, Mo, Nb) with intermetallic-forming additions like B, Si, and C have been largely untouched as primary drivers, despite their known role in solid-solution hardening and precipitation of hard phases. The new strategy targets: (1) boride/carbide precipitation hardening via B and C additions in refractory-transition metal matrices, (2) Si-induced ordering and \u03c3-phase formation in Cr-rich systems, and (3) high-lattice-distortion refractory HEAs centered on W-Ta-Mo with strong misfit strengthening.",
+    "mechanism": "Combined solid-solution lattice distortion (atomic size mismatch in refractory matrices), precipitation of hard intermetallic/boride/carbide phases, and order strengthening via B/Si/C additions",
+    "raw_candidates": [
+      {
+        "W": 0.25,
+        "Mo": 0.25,
+        "Cr": 0.2,
+        "B": 0.15,
+        "Si": 0.15
+      },
+      {
+        "Ta": 0.25,
+        "W": 0.25,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "B": 0.1
+      },
+      {
+        "Cr": 0.3,
+        "Fe": 0.2,
+        "Mo": 0.2,
+        "Si": 0.2,
+        "B": 0.1
+      },
+      {
+        "W": 0.2,
+        "Ta": 0.2,
+        "V": 0.2,
+        "Cr": 0.2,
+        "Si": 0.2
+      },
+      {
+        "Mo": 0.25,
+        "W": 0.2,
+        "Nb": 0.2,
+        "Si": 0.2,
+        "B": 0.15
+      },
+      {
+        "Cr": 0.25,
+        "Co": 0.2,
+        "Fe": 0.2,
+        "C": 0.2,
+        "Si": 0.15
+      },
+      {
+        "Ta": 0.3,
+        "Cr": 0.25,
+        "Mo": 0.2,
+        "Si": 0.15,
+        "B": 0.1
+      },
+      {
+        "W": 0.25,
+        "Re": 0.2,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "B": 0.15
+      },
+      {
+        "V": 0.25,
+        "Cr": 0.25,
+        "Mo": 0.2,
+        "Si": 0.2,
+        "C": 0.1
+      },
+      {
+        "Nb": 0.25,
+        "Mo": 0.2,
+        "Cr": 0.2,
+        "Si": 0.2,
+        "B": 0.15
+      },
+      {
+        "W": 0.2,
+        "Ta": 0.2,
+        "Cr": 0.2,
+        "Fe": 0.2,
+        "B": 0.2
+      },
+      {
+        "Re": 0.2,
+        "W": 0.2,
+        "Mo": 0.2,
+        "Si": 0.2,
+        "Cr": 0.2
+      }
+    ]
+  }
+]

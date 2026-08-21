@@ -1,0 +1,11 @@
+{
+  "n_predictions": 5250,
+  "coverage_1sigma": 0.7571428571428571,
+  "target_1sigma": 0.683,
+  "coverage_2sigma": 0.9674285714285714,
+  "target_2sigma": 0.954,
+  "mean_nll": 5.970353308651799,
+  "z_mean": 0.15464414455174538,
+  "z_std": 0.9736537721087435,
+  "note": "Calibration computed on acquisition-selected (argmax-EI) points only, not a uniform sample of input space; EI favours high-uncertainty points, so coverage may appear conservative. Interpret as calibration-where-it-acts."
+}

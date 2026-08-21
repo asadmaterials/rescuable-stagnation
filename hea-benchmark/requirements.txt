@@ -1,0 +1,27 @@
+# Verified on Python 3.12.3 — use Python 3.12.
+# The full pipeline (GP convergence sweep, physics validation, five-arm
+# runs, analysis chain) was developed and verified on 3.12.3 with exactly
+# these versions. Matching the interpreter removes a reproducibility
+# variable: if pip resolves different botorch/gpytorch versions on another
+# Python, GP fitting behavior can change, and the GP drives every
+# acquisition decision.
+
+# Pinned to the environment the pipeline was developed and verified in.
+# BoTorch/GPyTorch in particular change fit_gpytorch_mll behavior across
+# versions — mismatches can silently alter GP fits and therefore results,
+# so pin these especially.
+numpy==2.4.4
+pandas==3.0.2
+scipy==1.17.1
+scikit-learn==1.8.0
+torch==2.13.0
+gpytorch==1.15.2
+botorch==0.18.1
+matplotlib==3.10.8
+anthropic==0.116.0
+
+# Notes:
+# - torch is pinned without the +cu130 CUDA suffix; install the build
+#   matching your machine (CPU-only is fine, the models are tiny).
+# - If exact pins conflict on your platform, keep botorch/gpytorch/torch
+#   as a matched set (botorch 0.18.x expects gpytorch 1.15.x).

@@ -1,0 +1,403 @@
+[
+  {
+    "iteration": 6,
+    "stagnation_count": 5,
+    "best_g": 100.26422999999991,
+    "audit": {
+      "prompt_hash": "1371e5f77a1d5b0a",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has been dominated by Ru/Rh/Tc-based ternaries with Sc/Mn/V additions, and has stagnated at 100 GPa. The highest shear moduli in metals are found in Os, W, Re, Mo, and Ir — elements with high valence electron density, strong d-d bonding, and refractory character — which have been largely underexplored. Introducing Os- and W-rich compositions, Re-Ir alloys, and Mo-W combinations with small additions of transition metals known to stiffen lattices (Nb, Hf, Cr, V) should access a fundamentally higher-stiffness region.\",\n  \"strengthening_mechanism\": \"High valence electron density with strong covalent-like d-band hybridization in 5d refractory metals (Os, W, Re, Ir) produces very short bond lengths and high resistance to shear deformation; alloying with compatible 4d/5d transition metals maintains the stiff lattice while tuning electronic structure.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Os\": 0.50, \"W\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"Os has the highest shear modulus of any element (~222 GPa); combined with W and Re (both >160 GPa), this 5d refractory ternary should yield exceptional stiffness via d-band hybridization and high electron density.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Re\": 0.30, \"Ru\": 0.20},\n      \"rationale\": \"Os-Re-Ru spans hcp-compatible 5d/4d refractory metals with strong d-d bonding; Re additions to Os are known to improve ductility without major stiffness loss, and Ru bridges 4d/5d hybridization.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Re\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"W-Re sigma-phase region is avoided at these fractions; all three are bcc-compatible with high bulk and shear moduli driven by half-filled d-band stiffness in Group VI-VII metals.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Re\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Ir has a shear modulus ~210 GPa; alloying with Re and W maintains fcc/bcc mixed d-band character and high valence electron count, expected to produce very high shear stiffness.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Cr\": 0.25, \"Nb\": 0.25},\n      \"rationale\": \"Cr and Nb both have high shear moduli (~115 and ~38 GPa), and adding them to an Os matrix tests whether Group V-VI alloying elements can maintain or enhance the dense-packed Os stiffness.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Hf\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"W-Re is a classical refractory alloy system; Hf additions promote solid-solution hardening and slight lattice distortion that can increase shear resistance through misfit strengthening.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Mo\": 0.25, \"V\": 0.25},\n      \"rationale\": \"Re is the stiffest non-carbide/nitride metal (G ~178 GPa); Mo and V are isostructural bcc metals that provide solid-solution stiffening while keeping valence electron count near half-filled d-band optimum.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Os\": 0.25, \"Ru\": 0.25},\n      \"rationale\": \"A purely 5d/4d noble-refractory ternary with the three highest-shear-modulus pure metals (Os, Ir, Ru); expected to access the highest accessible stiffness in the available element set.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Ir\": 0.25, \"Cr\": 0.25},\n      \"rationale\": \"Cr has the highest shear modulus among 3d metals (~115 GPa) and combined with W and Ir in a Group VI/IX d-band alloy, strong directional d-d bonding should produce high shear stiffness.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.50, \"Re\": 0.25, \"Hf\": 0.25},\n      \"rationale\": \"Mo-Re alloys are benchmark refractory compositions; Hf introduces lattice strain and electron-count tuning that can enhance the shear modulus beyond pure Mo while maintaining bcc structure.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Cr\": 0.25, \"W\": 0.25},\n      \"rationale\": \"A Re-rich composition with Group VI additions explores the high-d-band-filling region; Re-Cr and Re-W both have positive mixing enthalpies that stiffen the lattice through compressed bond lengths.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.40, \"W\": 0.30, \"Mo\": 0.20, \"Nb\": 0.10},\n      \"rationale\": \"A quaternary refractory alloy combining the four highest-shear-modulus bcc/hcp metals available; the mixing of hcp Os with bcc W/Mo/Nb is expected to create a stiff disordered solid solution with very high valence electron density.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has been dominated by Ru/Rh/Tc-based ternaries with Sc/Mn/V additions, and has stagnated at 100 GPa. The highest shear moduli in metals are found in Os, W, Re, Mo, and Ir — elements with high valence electron density, strong d-d bonding, and refractory character — which have been largely underexplored. Introducing Os- and W-rich compositions, Re-Ir alloys, and Mo-W combinations with small additions of transition metals known to stiffen lattices (Nb, Hf, Cr, V) should access a fundamentally higher-stiffness region.",
+    "mechanism": "High valence electron density with strong covalent-like d-band hybridization in 5d refractory metals (Os, W, Re, Ir) produces very short bond lengths and high resistance to shear deformation; alloying with compatible 4d/5d transition metals maintains the stiff lattice while tuning electronic structure.",
+    "raw_candidates": [
+      {
+        "Os": 0.5,
+        "W": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Re": 0.3,
+        "Ru": 0.2
+      },
+      {
+        "W": 0.5,
+        "Re": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Re": 0.25,
+        "W": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Cr": 0.25,
+        "Nb": 0.25
+      },
+      {
+        "W": 0.5,
+        "Hf": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Mo": 0.25,
+        "V": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Os": 0.25,
+        "Ru": 0.25
+      },
+      {
+        "W": 0.5,
+        "Ir": 0.25,
+        "Cr": 0.25
+      },
+      {
+        "Mo": 0.5,
+        "Re": 0.25,
+        "Hf": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Cr": 0.25,
+        "W": 0.25
+      },
+      {
+        "Os": 0.4,
+        "W": 0.3,
+        "Mo": 0.2,
+        "Nb": 0.1
+      }
+    ]
+  },
+  {
+    "iteration": 9,
+    "stagnation_count": 8,
+    "best_g": 100.26422999999991,
+    "audit": {
+      "prompt_hash": "214155f6addc178a",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has converged on Ru/Rh-rich compositions with light transition metals (Mn, V, Ti, Mg), achieving a ceiling near 100 GPa. To escape stagnation, we should explore refractory-metal-rich compositions centered on W, Os, Re, Mo, and Ir — elements with the highest bulk moduli and shear moduli among pure metals due to their half-filled d-bands, high valence electron density, and strong directional d-d bonding. These regions are entirely unexplored in the current run.\",\n  \"strengthening_mechanism\": \"High valence-electron density and half-filled d-band filling in 5d refractory metals (W, Os, Re, Ir) and their alloys produces strong, directional d-d covalent-like bonding and short interatomic distances, which are the primary drivers of extreme shear stiffness in metallic systems.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Os\": 0.50, \"W\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"Os has the highest shear modulus of any pure element; combining with W and Re, both 5d refractory metals with high valence electron counts, maximizes d-band stiffness and minimizes atomic volume.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"W\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Re-W-Mo spans the peak of the 5d/4d d-band filling curve where shear modulus is maximized; all three are BCC-tendency refractory metals with strong metallic bonding and high Debye temperatures.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Re\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Ir has one of the highest shear moduli among FCC metals; alloying with Re and W adds 5d electrons and maintains high cohesive energy without drastically softening the shear response.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Ir\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"All three elements are 5d metals near the center-right of the d-band, providing extremely high valence electron density, short bond lengths, and expected shear moduli well above 200 GPa in pure form.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Re\": 0.25, \"Ru\": 0.25},\n      \"rationale\": \"W provides the BCC refractory backbone while Re and Ru add d-electron density that suppresses phonon softening modes; W-Re alloys are known to be harder than pure W.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Mo\": 0.25, \"Cr\": 0.25},\n      \"rationale\": \"Os base with Mo and Cr, both group-VI metals at the peak of d-band stiffness, targets a hexagonal-distorted lattice with high resistance to shear deformation via dense d-orbital overlap.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Ir\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Re-dominated composition with Ir and Mo bridges HCP and FCC tendencies in a way that can stabilize high-modulus intermetallic-like phases with strong directional bonding character.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Os\": 0.25, \"Nb\": 0.25},\n      \"rationale\": \"W-Os pairing leverages the two highest shear modulus pure metals (BCC and HCP respectively) while Nb stabilizes the BCC phase and contributes additional d-electron stiffening.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Os\": 0.25, \"Ru\": 0.25},\n      \"rationale\": \"A fully 4d/5d platinum-group composition; Ir-Os-Ru all have very high shear moduli and cohesive energies, and their combination avoids the softening seen when lighter elements are added.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Cr\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"W and Cr are both group-VI BCC metals with the highest elastic constants in their periods; Re addition is known to improve ductility without sacrificing stiffness in W-based alloys.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Os\": 0.25, \"Nb\": 0.25},\n      \"rationale\": \"Re-Os binary is among the stiffest alloy systems known experimentally; Nb addition provides BCC stabilization and high d-electron contribution while keeping average atomic volume low.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"W\": 0.25, \"Ir\": 0.25},\n      \"rationale\": \"Three of the top-five highest shear modulus pure metals combined in equimolar-like fractions; this composition sits at the intersection of HCP, BCC, and FCC phase fields where d-band hybridization is expected to be strongest.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has converged on Ru/Rh-rich compositions with light transition metals (Mn, V, Ti, Mg), achieving a ceiling near 100 GPa. To escape stagnation, we should explore refractory-metal-rich compositions centered on W, Os, Re, Mo, and Ir — elements with the highest bulk moduli and shear moduli among pure metals due to their half-filled d-bands, high valence electron density, and strong directional d-d bonding. These regions are entirely unexplored in the current run.",
+    "mechanism": "High valence-electron density and half-filled d-band filling in 5d refractory metals (W, Os, Re, Ir) and their alloys produces strong, directional d-d covalent-like bonding and short interatomic distances, which are the primary drivers of extreme shear stiffness in metallic systems.",
+    "raw_candidates": [
+      {
+        "Os": 0.5,
+        "W": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Re": 0.5,
+        "W": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Re": 0.25,
+        "W": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Ir": 0.25,
+        "Re": 0.25
+      },
+      {
+        "W": 0.5,
+        "Re": 0.25,
+        "Ru": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Mo": 0.25,
+        "Cr": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Ir": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "W": 0.5,
+        "Os": 0.25,
+        "Nb": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Os": 0.25,
+        "Ru": 0.25
+      },
+      {
+        "W": 0.5,
+        "Cr": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Os": 0.25,
+        "Nb": 0.25
+      },
+      {
+        "Os": 0.5,
+        "W": 0.25,
+        "Ir": 0.25
+      }
+    ]
+  },
+  {
+    "iteration": 12,
+    "stagnation_count": 11,
+    "best_g": 100.26422999999991,
+    "audit": {
+      "prompt_hash": "056043c2c74f7ae9",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The search has heavily explored Rh- and Ru-based ternaries with light transition metals and some lanthanides, and Tc-based systems, reaching a plateau near 100 GPa. To escape this plateau, we should target refractory metal combinations rich in W, Mo, Re, Os, and Ir — elements with the highest bulk/shear moduli among elemental metals due to their high valence electron density, strong d-d bonding, and BCC/HCP crystal structures. These regions are entirely unexplored in the current run and are physically motivated by the well-known stiffness of W (161 GPa), Os (~222 GPa), Re (~178 GPa), and Ir (~210 GPa) elemental shear moduli.\",\n  \"strengthening_mechanism\": \"High valence electron density with strong directional d-d orbital overlap in refractory HCP/BCC intermetallics; short bond lengths from small atomic radii of 5d metals; high cohesive energy and Debye temperature characteristic of Os, Re, W, and Ir-rich alloys.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Os\": 0.50, \"Re\": 0.30, \"W\": 0.20},\n      \"rationale\": \"Os-Re-W combines three of the stiffest elemental metals (all 5d refractory), expected to form solid solutions with high valence electron density and strong d-band bonding, likely yielding shear modulus well above 150 GPa.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Re\": 0.25, \"Os\": 0.25},\n      \"rationale\": \"Ir-Re-Os targets the FCC/HCP 5d refractory region; Ir has elemental G ~210 GPa, and alloying with Re and Os maintains high electron density and bond stiffness.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Re\": 0.25, \"Os\": 0.25},\n      \"rationale\": \"W-Re-Os is a classic refractory alloy system; Re is known to ductilize W while both Re and Os have very high shear moduli, making this an ideal high-G target.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Ir\": 0.25, \"Ru\": 0.25},\n      \"rationale\": \"Os-Ir-Ru combines the three stiffest HCP/FCC platinum-group metals with high d-electron density; all have elemental G > 150 GPa, and their mutual solubility supports stable solid solutions.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"W\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Re-W-Mo is a well-known ultra-refractory BCC-based alloy; high d-band filling and cohesive energy give very high shear modulus, entirely unexplored in this run.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Os\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Ir-Os-W mixes two HCP and one BCC refractory 5d metal; the combination maintains high valence electron count and short bond lengths expected to produce G > 130 GPa.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Ir\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"W-Ir-Re explores the BCC-FCC refractory boundary; W and Re are among the stiffest BCC metals and Ir contributes additional d-band stiffness through hybridization.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.50, \"Re\": 0.25, \"Ir\": 0.25},\n      \"rationale\": \"Mo-Re-Ir targets a different refractory region with high group-VI and group-IX d-electron density; Mo has G ~120 GPa and alloying with Re and Ir should maintain or enhance stiffness.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"W\": 0.30, \"Mo\": 0.20},\n      \"rationale\": \"Os-W-Mo combines the highest-G HCP metal (Os) with two BCC refractory metals, expected to show very high shear modulus through d-d bonding and high melting point character.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Os\": 0.25, \"Ru\": 0.25},\n      \"rationale\": \"Re-Os-Ru is an all-HCP platinum-group/refractory combination; Re and Os are the stiffest of this group and Ru (G ~173 GPa) adds additional stiffness in a chemically compatible system.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.40, \"Re\": 0.35, \"Mo\": 0.25},\n      \"rationale\": \"Ir-Re-Mo probes a mixed FCC-BCC 5d refractory alloy; Re and Mo both have high d-band filling and the combination with Ir targets a potentially stable intermetallic or solid solution with G well above 100 GPa.\"\n    },\n    {\n      \"composition\": {\"W\": 0.40, \"Os\": 0.35, \"Nb\": 0.25},\n      \"rationale\": \"W-Os-Nb extends the refractory BCC/HCP region with Nb as an additional group-V transition metal; Nb contributes strong d-bonding and the W-Os backbone anchors high shear modulus through dense d-electron packing.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The search has heavily explored Rh- and Ru-based ternaries with light transition metals and some lanthanides, and Tc-based systems, reaching a plateau near 100 GPa. To escape this plateau, we should target refractory metal combinations rich in W, Mo, Re, Os, and Ir — elements with the highest bulk/shear moduli among elemental metals due to their high valence electron density, strong d-d bonding, and BCC/HCP crystal structures. These regions are entirely unexplored in the current run and are physically motivated by the well-known stiffness of W (161 GPa), Os (~222 GPa), Re (~178 GPa), and Ir (~210 GPa) elemental shear moduli.",
+    "mechanism": "High valence electron density with strong directional d-d orbital overlap in refractory HCP/BCC intermetallics; short bond lengths from small atomic radii of 5d metals; high cohesive energy and Debye temperature characteristic of Os, Re, W, and Ir-rich alloys.",
+    "raw_candidates": [
+      {
+        "Os": 0.5,
+        "Re": 0.3,
+        "W": 0.2
+      },
+      {
+        "Ir": 0.5,
+        "Re": 0.25,
+        "Os": 0.25
+      },
+      {
+        "W": 0.5,
+        "Re": 0.25,
+        "Os": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Ir": 0.25,
+        "Ru": 0.25
+      },
+      {
+        "Re": 0.5,
+        "W": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Os": 0.25,
+        "W": 0.25
+      },
+      {
+        "W": 0.5,
+        "Ir": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Mo": 0.5,
+        "Re": 0.25,
+        "Ir": 0.25
+      },
+      {
+        "Os": 0.5,
+        "W": 0.3,
+        "Mo": 0.2
+      },
+      {
+        "Re": 0.5,
+        "Os": 0.25,
+        "Ru": 0.25
+      },
+      {
+        "Ir": 0.4,
+        "Re": 0.35,
+        "Mo": 0.25
+      },
+      {
+        "W": 0.4,
+        "Os": 0.35,
+        "Nb": 0.25
+      }
+    ]
+  },
+  {
+    "iteration": 15,
+    "stagnation_count": 14,
+    "best_g": 100.26422999999991,
+    "audit": {
+      "prompt_hash": "9108748a8700b9da",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The optimization has converged around Ru-Mn-V, V-Cr-Tc, and Tc-Nb-Zr systems, all involving 4d/5d transition metals with high valence electron density. The unexplored high-shear-modulus territory includes W, Mo, Re, Os, and Ir-rich compositions—the hardest and stiffest BCC/HCP metals with strong d-d covalent bonding and high Debye temperatures—combined with elements like Cr, Nb, and Ta that reinforce short, directional metallic bonds. These refractory elements have never been the majority component in any query.\",\n  \"strengthening_mechanism\": \"High valence electron density with strong directional d-d hybridization in BCC/HCP refractory metals (W, Re, Os, Mo, Ir) produces large resistance to shear deformation; alloying with Cr, Nb, Ta, and V further enhances electron density and solid-solution strengthening while maintaining stiff metallic bonding.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"W\": 0.50, \"Re\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"W-Re-Mo are the three stiffest BCC metals; W has the highest melting point and shear modulus among elements, and Re/Mo additions maintain BCC structure while maximizing valence electron density.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"W\": 0.25, \"Cr\": 0.25},\n      \"rationale\": \"Re has one of the highest shear moduli (~178 GPa pure), and alloying with W and Cr in an HCP/BCC matrix maximizes d-band filling and bond stiffness.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Re\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Os is the densest element with the highest bulk modulus among metals; combined with Re and W in an HCP-dominated phase, d-d bonding should yield exceptionally high shear resistance.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Ir\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"Os and Ir are the two stiffest 5d metals (HCP and FCC); Re addition promotes d-orbital hybridization across the 5d series for maximum shear stiffness.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Re\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Ir has a very high shear modulus (~210 GPa) in FCC structure; Re and Mo provide strong d-d cross-hybridization and solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Os\": 0.25, \"Nb\": 0.25},\n      \"rationale\": \"W-Os combination crosses BCC-HCP phase space with maximal d-electron occupancy; Nb adds ductility-stiffness balance through electron count tuning in refractory solid solutions.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Os\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Re-Os alloys sit near the center of the 5d transition series where d-band stiffness is maximized; Mo extends into 4d for multi-scale bonding reinforcement.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.50, \"Re\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Mo-Re binary is a well-known ultra-high-strength refractory alloy; W addition raises valence electron density further and increases the Peierls barrier to dislocation motion.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Cr\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"W-Cr share BCC structure and strong directional d-bonding; Re addition compensates for brittleness while enhancing high-temperature shear resistance through solid-solution hardening.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Os\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Ir-Os are the two highest-shear-modulus 5d FCC/HCP elements; Mo bridges 4d/5d hybridization to stabilize a stiff multi-principal-element phase.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.34, \"W\": 0.33, \"Os\": 0.33},\n      \"rationale\": \"Near-equiatomic Re-W-Os explores the highest-modulus corner of the 5d transition metal space with no single dominant phase, potentially forming a stiff disordered solid solution.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Mo\": 0.25, \"Ta\": 0.25},\n      \"rationale\": \"W-Mo-Ta is a classic Group-VI/V refractory ternary; all three elements have BCC structure, high melting points, and strong Peierls stress, making this combination a natural high-shear-modulus target.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The optimization has converged around Ru-Mn-V, V-Cr-Tc, and Tc-Nb-Zr systems, all involving 4d/5d transition metals with high valence electron density. The unexplored high-shear-modulus territory includes W, Mo, Re, Os, and Ir-rich compositions—the hardest and stiffest BCC/HCP metals with strong d-d covalent bonding and high Debye temperatures—combined with elements like Cr, Nb, and Ta that reinforce short, directional metallic bonds. These refractory elements have never been the majority component in any query.",
+    "mechanism": "High valence electron density with strong directional d-d hybridization in BCC/HCP refractory metals (W, Re, Os, Mo, Ir) produces large resistance to shear deformation; alloying with Cr, Nb, Ta, and V further enhances electron density and solid-solution strengthening while maintaining stiff metallic bonding.",
+    "raw_candidates": [
+      {
+        "W": 0.5,
+        "Re": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Re": 0.5,
+        "W": 0.25,
+        "Cr": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Re": 0.25,
+        "W": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Ir": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Re": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "W": 0.5,
+        "Os": 0.25,
+        "Nb": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Os": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Mo": 0.5,
+        "Re": 0.25,
+        "W": 0.25
+      },
+      {
+        "W": 0.5,
+        "Cr": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Os": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "Re": 0.34,
+        "W": 0.33,
+        "Os": 0.33
+      },
+      {
+        "W": 0.5,
+        "Mo": 0.25,
+        "Ta": 0.25
+      }
+    ]
+  },
+  {
+    "iteration": 18,
+    "stagnation_count": 17,
+    "best_g": 100.26422999999991,
+    "audit": {
+      "prompt_hash": "4654368016b96662",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "raw_response": "{\n  \"reasoning\": \"The optimization has converged around Ru-Mn-V and Tc-V-Cr systems with bcc/hcp transition-metal combinations. The top compositions share strong d-d bonding among Group V-VII elements (V, Cr, Mn, Tc, Ru), but the search has not explored W, Re, Mo, Os, Ir, Nb, Hf in dominant roles — these are among the stiffest elemental metals and their alloys are expected to show high shear moduli via high valence-electron density and strong directional d-orbital overlap. Specifically, W-Re-Mo, Os-Re-Ir, and Re-W-Nb alloys are untried refractory systems known for exceptional stiffness.\",\n  \"strengthening_mechanism\": \"High valence-electron density (d-band filling near half-full) in refractory bcc/hcp metals (W, Re, Os, Mo, Ir) produces strong directional d-d bonding and high resistance to shear deformation; alloying between these elements maintains the stiff metallic lattice while tuning electron count for maximum elastic modulus.\",\n  \"candidates\": [\n    {\n      \"composition\": {\"Re\": 0.50, \"W\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Re-W-Mo are all refractory metals with near-half-filled d-bands and very high elemental shear moduli (Re~150 GPa, W~161 GPa, Mo~126 GPa), their alloy is expected to retain or exceed current best.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Re\": 0.25, \"Nb\": 0.25},\n      \"rationale\": \"W-dominated bcc alloy with Re and Nb; W has the highest elemental shear modulus among bcc metals, Re strengthens further via solid-solution hardening of the d-band.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"Re\": 0.25, \"Ir\": 0.25},\n      \"rationale\": \"Os, Re, and Ir are the stiffest hcp/fcc transition metals; Os has the highest bulk modulus of any element and Re has exceptional shear modulus, making this an extremely stiff combination.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Os\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Re-Os-W triples three of the hardest, densest metals with high d-electron density; all three have strong resistance to shear and are expected to synergize for ultra-high stiffness.\"\n    },\n    {\n      \"composition\": {\"Mo\": 0.50, \"Re\": 0.25, \"W\": 0.25},\n      \"rationale\": \"Mo-rich alloy with Re and W explores a different Cr-group-dominated region; Mo-Re alloys are known industrially for exceptional strength and stiffness.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Mo\": 0.25, \"Hf\": 0.25},\n      \"rationale\": \"W-Mo-Hf combines two high-shear-modulus bcc metals with Hf, which adds large atomic size mismatch and solid-solution strengthening without dramatically reducing d-band stiffness.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Re\": 0.25, \"Nb\": 0.25},\n      \"rationale\": \"Ir is the stiffest fcc metal (G~210 GPa elementally); pairing with Re and Nb fills the d-band optimally and maintains strong directional bonding in a multi-phase refractory system.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"Mo\": 0.25, \"V\": 0.25},\n      \"rationale\": \"Extends the successful V-Tc-Cr and Mn-Ru-V motif into the heavier Group VII (Re) territory, combining high d-electron count metals from different periods for d-d orbital hybridization.\"\n    },\n    {\n      \"composition\": {\"Os\": 0.50, \"W\": 0.25, \"Mo\": 0.25},\n      \"rationale\": \"Os-W-Mo mixes hcp Os (extremely stiff) with bcc W and Mo to create a high-density alloy; all three have very high Debye temperatures correlating with large phonon stiffness and shear modulus.\"\n    },\n    {\n      \"composition\": {\"W\": 0.50, \"Re\": 0.25, \"Ta\": 0.25},\n      \"rationale\": \"W-Re-Ta is a classical refractory superalloy combination; Ta adds Group V electrons to the half-filled d-band of W-Re, potentially maximizing cohesive energy and shear resistance.\"\n    },\n    {\n      \"composition\": {\"Ir\": 0.50, \"Os\": 0.25, \"Re\": 0.25},\n      \"rationale\": \"A concentrated precious-metal refractory alloy of the three intrinsically stiffest elemental metals (Os, Ir, Re G>150 GPa each), maximizing d-band cohesion in the 5d series.\"\n    },\n    {\n      \"composition\": {\"Re\": 0.50, \"W\": 0.25, \"Cr\": 0.25},\n      \"rationale\": \"Re-W-Cr draws on the known high stiffness of Cr (G~115 GPa) combined with W and Re in a bcc-structured alloy; Cr-W-Re maintains high valence electron density and strong d-orbital overlap across periods 4-6.\"\n    }\n  ]\n}"
+        }
+      ]
+    },
+    "reasoning": "The optimization has converged around Ru-Mn-V and Tc-V-Cr systems with bcc/hcp transition-metal combinations. The top compositions share strong d-d bonding among Group V-VII elements (V, Cr, Mn, Tc, Ru), but the search has not explored W, Re, Mo, Os, Ir, Nb, Hf in dominant roles — these are among the stiffest elemental metals and their alloys are expected to show high shear moduli via high valence-electron density and strong directional d-orbital overlap. Specifically, W-Re-Mo, Os-Re-Ir, and Re-W-Nb alloys are untried refractory systems known for exceptional stiffness.",
+    "mechanism": "High valence-electron density (d-band filling near half-full) in refractory bcc/hcp metals (W, Re, Os, Mo, Ir) produces strong directional d-d bonding and high resistance to shear deformation; alloying between these elements maintains the stiff metallic lattice while tuning electron count for maximum elastic modulus.",
+    "raw_candidates": [
+      {
+        "Re": 0.5,
+        "W": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "W": 0.5,
+        "Re": 0.25,
+        "Nb": 0.25
+      },
+      {
+        "Os": 0.5,
+        "Re": 0.25,
+        "Ir": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Os": 0.25,
+        "W": 0.25
+      },
+      {
+        "Mo": 0.5,
+        "Re": 0.25,
+        "W": 0.25
+      },
+      {
+        "W": 0.5,
+        "Mo": 0.25,
+        "Hf": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Re": 0.25,
+        "Nb": 0.25
+      },
+      {
+        "Re": 0.5,
+        "Mo": 0.25,
+        "V": 0.25
+      },
+      {
+        "Os": 0.5,
+        "W": 0.25,
+        "Mo": 0.25
+      },
+      {
+        "W": 0.5,
+        "Re": 0.25,
+        "Ta": 0.25
+      },
+      {
+        "Ir": 0.5,
+        "Os": 0.25,
+        "Re": 0.25
+      },
+      {
+        "Re": 0.5,
+        "W": 0.25,
+        "Cr": 0.25
+      }
+    ]
+  }
+]

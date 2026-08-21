@@ -1,0 +1,205 @@
+{
+  "headline": {
+    "llm_vs_none": {
+      "median_diff": 0.0,
+      "boot_ci": [
+        0.0,
+        0.0
+      ],
+      "rank_biserial": 0.45454545454545453,
+      "per_split_signs": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direction_consistent": true
+    },
+    "llm_vs_random": {
+      "median_diff": 0.0,
+      "boot_ci": [
+        0.0,
+        0.0
+      ],
+      "rank_biserial": 0.1111111111111111,
+      "per_split_signs": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direction_consistent": true
+    },
+    "llm_vs_mutation": {
+      "median_diff": 0.0,
+      "boot_ci": [
+        0.0,
+        0.0
+      ],
+      "rank_biserial": 0.3333333333333333,
+      "per_split_signs": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direction_consistent": true
+    },
+    "llm_vs_digest": {
+      "median_diff": 0.0,
+      "boot_ci": [
+        0.0,
+        0.0
+      ],
+      "rank_biserial": -0.07692307692307693,
+      "per_split_signs": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "direction_consistent": true
+    }
+  },
+  "calibration": {
+    "n": 3500,
+    "cov_1sigma": 0.6891428571428572,
+    "cov_2sigma": 0.9568571428571429,
+    "nll": 4.6202078349505,
+    "z_mean": 0.6332336491663394,
+    "z_std": 0.784175683887517,
+    "verdict": "well-calibrated"
+  },
+  "admission": {
+    "random": {
+      "proposed": 1500,
+      "admitted": 236,
+      "admit_rate": 0.15733333333333333,
+      "rejects_by_reason": {
+        "beyond_reliable_region": 1157
+      }
+    },
+    "mutation": {
+      "proposed": 1558,
+      "admitted": 133,
+      "admit_rate": 0.08536585365853659,
+      "rejects_by_reason": {
+        "near_duplicate": 1344,
+        "beyond_reliable_region": 35
+      }
+    },
+    "digest": {
+      "proposed": 1512,
+      "admitted": 276,
+      "admit_rate": 0.18253968253968253,
+      "rejects_by_reason": {
+        "beyond_reliable_region": 1011,
+        "near_duplicate": 1
+      }
+    },
+    "llm": {
+      "proposed": 1464,
+      "admitted": 366,
+      "admit_rate": 0.25,
+      "rejects_by_reason": {
+        "near_duplicate": 112,
+        "beyond_reliable_region": 109
+      }
+    }
+  },
+  "rescuable": {
+    "digest": {
+      "events_per_run": 3.6,
+      "rescuable_per_run": 3.1714285714285713,
+      "rescuable_frac": 0.8809523809523809
+    },
+    "llm": {
+      "events_per_run": 3.4857142857142858,
+      "rescuable_per_run": 3.0,
+      "rescuable_frac": 0.860655737704918
+    },
+    "mutation": {
+      "events_per_run": 3.7142857142857144,
+      "rescuable_per_run": 3.2857142857142856,
+      "rescuable_frac": 0.8846153846153846
+    },
+    "random": {
+      "events_per_run": 3.5714285714285716,
+      "rescuable_per_run": 3.142857142857143,
+      "rescuable_frac": 0.8799999999999999
+    }
+  },
+  "region_overlap": {
+    "mutation_regions": 59,
+    "llm_regions": 44,
+    "shared": 3,
+    "jaccard": 0.03,
+    "llm_only_examples": [
+      "Re-W",
+      "Mo-Re",
+      "Os-Re",
+      "Os-W",
+      "Ir-Re",
+      "Ir-Os",
+      "Os-Ru",
+      "Mo-W",
+      "Ir-W",
+      "Ir-Mo",
+      "Mo-Os",
+      "Re-Ru"
+    ]
+  },
+  "cost_benefit": {
+    "random": {
+      "n_events": 125,
+      "mean_gen_seconds": 0.0012831703992560507,
+      "median_gen_seconds": 0.0012016999535262585,
+      "total_gen_seconds": 0.16039629990700632
+    },
+    "mutation": {
+      "n_events": 130,
+      "mean_gen_seconds": 0.0009325684648222075,
+      "median_gen_seconds": 0.0009242499945685267,
+      "total_gen_seconds": 0.12123390042688698
+    },
+    "digest": {
+      "n_events": 126,
+      "mean_gen_seconds": 0.0019565936545693566,
+      "median_gen_seconds": 0.0017654999974183738,
+      "total_gen_seconds": 0.24653080047573894
+    },
+    "llm": {
+      "n_events": 122,
+      "mean_gen_seconds": 27.26460403605788,
+      "median_gen_seconds": 27.23977854999248,
+      "total_gen_seconds": 3326.2816923990613
+    }
+  },
+  "outliers": {
+    "best_non_llm": 156.96856333333326,
+    "llm_field_beating": [
+      {
+        "split": 2,
+        "seed": 3,
+        "G": 172.35701666666648
+      }
+    ]
+  },
+  "oracle_ranking": {
+    "per_split": [
+      0.8778796162835129,
+      0.8525553693425355,
+      0.8538572871749204,
+      0.8586497078208152,
+      0.8488270230958675
+    ],
+    "mean": 0.8583538007435303,
+    "std": 0.0102561685519745,
+    "ci95_lo": 0.8493638726357333,
+    "ci95_hi": 0.8673437288513273
+  }
+}

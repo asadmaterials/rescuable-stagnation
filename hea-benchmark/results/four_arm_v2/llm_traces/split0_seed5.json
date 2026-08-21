@@ -1,0 +1,268 @@
+[
+  {
+    "iteration": 9,
+    "stagnation_count": 3,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "1e7d669d5f1809a5",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 12,
+    "stagnation_count": 6,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "f6e7a7f93b2abfa6",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 15,
+    "stagnation_count": 9,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "32031daf65164cd7",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 18,
+    "stagnation_count": 12,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "10f2eb211b5afc06",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 21,
+    "stagnation_count": 15,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "9f6cd9bd437c7d7e",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 24,
+    "stagnation_count": 18,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "a70e3eb1d41ee0a1",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 27,
+    "stagnation_count": 21,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "9d78d793f438bc0a",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 30,
+    "stagnation_count": 24,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "075790bab1ff95b2",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 33,
+    "stagnation_count": 27,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "2bea3454248164d2",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 36,
+    "stagnation_count": 30,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "2fb290b12185f00e",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 39,
+    "stagnation_count": 33,
+    "best_hv": 744.0536666666691,
+    "audit": {
+      "prompt_hash": "3256414d13c3321c",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 42,
+    "stagnation_count": 0,
+    "best_hv": 751.1789523809523,
+    "audit": {
+      "prompt_hash": "cac2a7dd8e1ce77a",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 45,
+    "stagnation_count": 3,
+    "best_hv": 751.1789523809523,
+    "audit": {
+      "prompt_hash": "70838ffa33b5b0a5",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  },
+  {
+    "iteration": 48,
+    "stagnation_count": 6,
+    "best_hv": 751.1789523809523,
+    "audit": {
+      "prompt_hash": "974a0386e7ab3376",
+      "model": "claude-sonnet-4-6",
+      "temperature": 1.0,
+      "attempts": [
+        {
+          "attempt": 1,
+          "error": "Connection error."
+        }
+      ]
+    },
+    "reasoning": null,
+    "mechanism": null,
+    "raw_candidates": []
+  }
+]

@@ -1,0 +1,30 @@
+STATISTICAL REPORT
+============================================================
+LLM mode: real
+Claim scope: rescue-on-benchmark; NOT a discovery claim
+
+Final HV by arm (mean ± 95% CI over all splits×seeds):
+  none      :   754.6 ± 2.9   (n=21)
+  random    :   760.3 ± 8.7   (n=21)
+  mutation  :   761.3 ± 3.3   (n=21)
+  digest    :   754.8 ± 5.4   (n=21)
+  llm       :   754.5 ± 3.2   (n=21)
+
+LLM vs controls (paired, Holm-corrected):
+  llm_vs_none     : Δmedian=  +0.0 HV  CI[+0.0,+0.0]  holm_p=1.0000 (n.s.)  effect r=-0.20
+  llm_vs_random   : Δmedian=  +0.0 HV  CI[+0.0,+0.0]  holm_p=1.0000 (n.s.)  effect r=-0.11
+  llm_vs_mutation : Δmedian=  -3.4 HV  CI[-12.5,-1.1]  holm_p=0.0059 (significant)  effect r=-0.78
+  llm_vs_digest   : Δmedian=  +0.0 HV  CI[+0.0,+0.0]  holm_p=1.0000 (n.s.)  effect r=+0.20
+
+Oracle-error context (E2): canonical oracle OOS MAE = 78 HV.
+  llm_vs_none     : |Δ|=0.0 HV well within oracle MAE — interpret as benchmark-optimization behaviour, not a claim of physical hardness difference
+  llm_vs_random   : |Δ|=0.0 HV well within oracle MAE — interpret as benchmark-optimization behaviour, not a claim of physical hardness difference
+  llm_vs_mutation : |Δ|=3.4 HV well within oracle MAE — interpret as benchmark-optimization behaviour, not a claim of physical hardness difference
+  llm_vs_digest   : |Δ|=0.0 HV well within oracle MAE — interpret as benchmark-optimization behaviour, not a claim of physical hardness difference
+
+Per-split direction check (B1 credibility):
+  llm vs none     : per-split signs [1, -1, 0]  INCONSISTENT
+  llm vs random   : per-split signs [-1, 1, -1]  INCONSISTENT
+  llm vs mutation : per-split signs [-1, -1, -1]  CONSISTENT
+  llm vs digest   : per-split signs [-1, 1, -1]  INCONSISTENT
+Control-sensitivity note (E1): the mutation arm uses sigma=0.05, top_k=3. These are fixed heuristics and the mutation control's strength depends on them; this is a stated limitation. A sigma sweep is planned as a robustness check (Wave 3) but the reported conclusions do not assume it.

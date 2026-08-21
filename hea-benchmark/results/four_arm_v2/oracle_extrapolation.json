@@ -1,0 +1,13 @@
+{
+  "n_llm_proposals": 2976,
+  "n_scored": 1777,
+  "n_interstitial_excluded": 82,
+  "n_both_channels": 1695,
+  "llm_rf_mean": 618.8750499825818,
+  "llm_dist_mean": 4.481990995347611,
+  "mutation_rf_mean": 715.2429662811794,
+  "mutation_dist_mean": 2.3542958809038628,
+  "train_hv_mean": 469.36084337349394,
+  "spearman_dist_vs_rf": 0.20750412684254557,
+  "caveat": "Channel B is a ranking proxy, not calibrated HV. Interstitial (B/C) alloys are out-of-model and excluded from physics comparisons but reported. This shows channel DISAGREEMENT, not that the LLM proposals are truly harder."
+}

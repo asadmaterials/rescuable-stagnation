@@ -1,0 +1,35 @@
+# ============================================================================
+# MP Shear-Modulus Rescue Experiment — pinned requirements
+# ============================================================================
+# Verified on Python 3.12. Use Python 3.12 (NOT 3.13/3.14 — matminer,
+# pymatgen, botorch, and gpytorch lag behind the newest Python on wheels,
+# and version drift in botorch/gpytorch changes GP-fitting behaviour, which
+# drives every acquisition decision).
+#
+# The version numbers below are the set the pipeline was developed and
+# verified against. If pip cannot resolve an exact pin on your platform,
+# keep torch / gpytorch / botorch as a MATCHED set (botorch 0.18.x expects
+# gpytorch 1.15.x); those three are the ones that matter for reproducibility.
+# ----------------------------------------------------------------------------
+
+# --- core scientific stack ---
+numpy==2.4.4
+pandas==2.3.3
+scipy==1.17.1
+scikit-learn==1.8.0
+pyarrow==25.0.0            # parquet feature cache; needs >=20 for mp-api
+
+# --- Bayesian optimization (GP surrogate) ---
+# Keep these three as a matched set.
+torch==2.13.0             # CPU build is fine; models are tiny
+gpytorch==1.15.2
+botorch==0.18.1
+
+# --- materials featurization & data ---
+matminer==0.10.1          # Magpie composition descriptors
+pymatgen==2026.5.4        # Composition parsing; matminer dependency
+mp-api>=0.45              # Materials Project client (only needed if the
+                          # cached CSV is absent and data must be re-pulled)
+
+# --- LLM arm ---
+anthropic>=0.40           # Claude API client for the llm arm

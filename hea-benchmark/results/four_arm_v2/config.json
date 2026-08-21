@@ -1,0 +1,36 @@
+{
+  "timestamp": "2026-07-21T20:02:04.630900",
+  "arms": [
+    "none",
+    "random",
+    "mutation",
+    "digest",
+    "llm"
+  ],
+  "n_splits": 3,
+  "n_bo_seeds": 7,
+  "n_initial": 12,
+  "n_iterations": 50,
+  "inject_n": 3,
+  "llm_oversample": 4,
+  "stagnation_window": 5,
+  "stagnation_thresh": 0.02,
+  "inject_cooldown": 3,
+  "llm_model": "claude-sonnet-4-6",
+  "llm_temperature": 1.0,
+  "llm_max_tokens": 2048,
+  "working_data": "../data/processed/hea_hardness_working.csv",
+  "gp_fit": "uncapped (fit_gpytorch_mll to convergence)",
+  "dedup_metric": "mahalanobis-descriptor; ref = obs \u222a pool \u222a dataset",
+  "digest_rule": "PRIMARY causal control, pre-specified, ZERO hyperparameters: read the same 8-cluster digest the LLM sees (counts + best-HV); rank clusters by query count; discard clusters at/above the MEDIAN count (parameter-free split); choose uniformly among the remainder (plus never-seen elements); sample random composition anchored there. Performs NO optimization \u2014 isolates information access from reasoning.",
+  "digest_ucb_note": "SUPPLEMENTARY ablation, not in the main run. Asks a DIFFERENT question: can the LLM beat a classical heuristic built from the same information? Enable explicitly by adding digest_ucb to arms.",
+  "digest_ucb_rule": "UCB1 over dominant-element clusters; score(c)=best_HV(c)+beta*sqrt(ln(N)/n_c); beta=std(observed HV) (data-set, not hand-tuned); unseen elements get optimistic priority; sees the SAME 8-cluster-truncated digest as the LLM arm.",
+  "arm_information": {
+    "none": "n/a",
+    "random": "none",
+    "digest": "same as llm: counts + best-HV (8-truncated); rule uses counts only",
+    "digest_ucb": "same as llm: per-cluster best-HV + counts (8-truncated), top-5, best-so-far, stagnation depth, budget",
+    "mutation": "top-k incumbents (local)",
+    "llm": "per-cluster best-HV + counts (8-truncated), top-5, 15 recent, best-so-far, stagnation depth, budget"
+  }
+}

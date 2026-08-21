@@ -1,0 +1,47 @@
+{
+  "digest": {
+    "events_per_run": 14.285714285714286,
+    "admitted_per_run": 42.19047619047619,
+    "proposed_per_run": 171.42857142857142,
+    "admit_ratio": 0.2461111111111111,
+    "detector_fired": 42.04761904761905,
+    "cooldown_blocked": 27.761904761904763
+  },
+  "llm": {
+    "events_per_run": 14.333333333333334,
+    "admitted_per_run": 33.76190476190476,
+    "proposed_per_run": 141.71428571428572,
+    "admit_ratio": 0.2382392473118279,
+    "detector_fired": 42.42857142857143,
+    "cooldown_blocked": 28.095238095238095
+  },
+  "mutation": {
+    "events_per_run": 14.047619047619047,
+    "admitted_per_run": 21.666666666666668,
+    "proposed_per_run": 168.57142857142858,
+    "admit_ratio": 0.1285310734463277,
+    "detector_fired": 41.42857142857143,
+    "cooldown_blocked": 27.38095238095238
+  },
+  "none": {
+    "events_per_run": 0.0,
+    "admitted_per_run": 0.0,
+    "proposed_per_run": 0.0,
+    "admit_ratio": NaN,
+    "detector_fired": 42.666666666666664,
+    "cooldown_blocked": 0.0
+  },
+  "random": {
+    "events_per_run": 14.238095238095237,
+    "admitted_per_run": 39.57142857142857,
+    "proposed_per_run": 170.85714285714286,
+    "admit_ratio": 0.23160535117056855,
+    "detector_fired": 41.80952380952381,
+    "cooldown_blocked": 27.571428571428573
+  },
+  "_divergence": {
+    "events_rel_spread": 0.020083682008368253,
+    "admitted_rel_spread": 0.5984033321763276
+  },
+  "_verdict": "DIVERGENT — arms did NOT receive comparable rescue opportunity. Frequency is confounded with performance; run the fixed-injection-schedule variant (inject every N iterations regardless of stagnation) to decouple."
+}
