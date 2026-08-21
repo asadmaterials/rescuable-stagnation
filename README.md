@@ -202,24 +202,6 @@ path before a multi-hour run).
 
 ---
 
-## Citation
-
-If you use this code or data, please cite the paper (and, for the underlying
-datasets, the sources under *Data provenance* above):
-
-```bibtex
-@article{asad_rescuable_stagnation,
-  author  = {Asad, Muhammad},
-  title   = {Rescuable Stagnation: A Diagnostic for Benchmark Suitability
-             in LLM-Guided Materials Optimization},
-  journal = {Digital Discovery},
-  year    = {2026},
-  note    = {Code and data: <INSERT Zenodo DOI here>}
-}
-```
-
----
-
 ## License
 
 Code is released under the terms in [`LICENSE`](LICENSE). Underlying datasets
