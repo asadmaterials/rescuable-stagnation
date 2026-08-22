@@ -3,9 +3,8 @@
 Code and data accompanying:
 
 > **Rescuable Stagnation: A Diagnostic for Benchmark Suitability in LLM-Guided
-> Materials Optimization**s
-> Muhammad Asad. (Independent Researcher)
-
+> Materials Optimization**
+> Muhammad Asad. 
 This repository reproduces both benchmarks in the paper: the **Materials Project
 shear-modulus benchmark** (main text) and the **high-entropy-alloy hardness
 benchmark** (Electronic Supplementary Information). It contains the source code,
@@ -40,6 +39,7 @@ rescuable-stagnation/
 ├── README.md              ← this file (start here)
 ├── LICENSE                ← open-source license for the code
 ├── .gitignore
+├── CITATION.cffs
 │
 ├── mp-benchmark/          ← Materials Project shear modulus  (MAIN TEXT)
 │   ├── RUN.md             ← authoritative step-by-step guide
@@ -47,6 +47,12 @@ rescuable-stagnation/
 │   ├── *.py               ← flat layout; all scripts import each other
 │   ├── mp_shear_metallic.csv        (dataset; see Data provenance)
 │   ├── mp_features_cache.parquet    (Magpie feature cache; regenerable)
+│   ├── benchmark-screening/         ← PROSPECTIVE go/no-go gate (run BEFORE the experiment)
+│   │   ├── MP_benchmark_screening.py     the rescuable-stagnation gate
+│   │   ├── oracle_diagnostics.py         oracle adequacy (ranking, error-vs-distance)
+│   │   ├── admission_threshold.py        empirical admission-distance cutoff
+│   │   ├── *_output.txt / *.json         recorded screening outputs
+│   │   └── README.md                     what the gate does and how to run it
 │   ├── figures/
 │   └── results/mp_shear_v1/         (JSON/CSV outputs, run_detail/, llm_traces/)
 │
@@ -104,6 +110,25 @@ Tables and figures are produced from the committed `results/` files by the
 scripts below, so any reported value can be checked without re-running the
 optimization. See each folder's `RUN.md` for the exact output filenames.
 
+### Prospective benchmark screening — the go/no-go gate (`mp-benchmark/benchmark-screening/`)
+
+Before the experiment was built, the benchmark was screened against the
+paper's central criterion: does the optimizer stall *while meaningful
+improvement is still available*? This pre-run gate is the paper's core
+methodological contribution and is run first — only a **GO** verdict justifies
+building the five-arm experiment.
+
+| Paper item | Produced by | Result |
+|---|---|---|
+| Oracle adequacy (rank fidelity, error-vs-distance confound check) | `oracle_diagnostics.py` | Spearman 0.849; error–distance +0.259 → "build with care" |
+| Admission-distance cutoff (reliable-region bound) | `admission_threshold.py` | distance ≤ 6.42 (90th pct), 90% pool admitted |
+| Rescuable-stagnation go/no-go gate | `MP_benchmark_screening.py` | all budgets GOOD → **GO** |
+
+See `mp-benchmark/benchmark-screening/README.md` for full detail. Note that the
+screening oracle numbers (R² 0.43, MAE 13 GPa) are a coarse pre-run estimate and
+differ from the final experiment's oracle (R² 0.52, MAE 11.1 GPa); only the
+final-experiment values are reported as results.
+
 ### Materials Project benchmark — main text (`mp-benchmark/`)
 
 Run: `python mp_runner.py` → writes `results/mp_shear_v1/`.
@@ -157,7 +182,7 @@ path before a multi-hour run).
 > Some scripts in `src/` support robustness checks and ablations that are
 > described but not part of the headline runs — e.g. `constrained_bo.py`
 > (constrained-BO ablation), `novelty_metric.py` (exploration/novelty
-> characterization).
+> characterization), and the `digest_ucb` supplementary arm noted in `RUN.md`.
 > They are included for completeness and are not required to reproduce the
 > reported results.
 

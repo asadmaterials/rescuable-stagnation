@@ -1,0 +1,38 @@
+====================================================================
+  ADMISSION DISTANCE THRESHOLD
+  Keep candidates in the oracle's flat-error region
+====================================================================
+  Featurizing...
+
+  held-out points: 549
+  distance range : 0.50 - 15.10 (median 3.42)
+  overall mean |error|: 12.1 GPa
+
+  --------------------------------------------------------------
+   threshold  pctile  mean|err| inside   % admitted
+  --------------------------------------------------------------
+        3.42     50%               9.9          50%
+        3.90     60%               9.6          60%
+        4.65     70%               9.3          70%
+        4.97     75%              10.2          75%
+        5.26     80%              11.2          80%
+        5.76     85%              11.4          85%
+        6.42     90%              11.3          90%
+        7.33     95%              11.9          95%
+
+  --------------------------------------------------------------
+  RECOMMENDED THRESHOLD: distance <= 6.42
+    (= 90th percentile of candidate distances)
+    mean |error| inside: 11.3 GPa  (vs 9.9 in closest half)
+    pool admitted: 90%
+
+    Rationale: largest distance bound at which oracle error
+    stays within 15% of its closest-region value — the search
+    keeps most of the pool while every candidate is scored in
+    the oracle's reliable region. Pre-register this cutoff.
+
+  NOTE: enforce this in admission using the SAME metric —
+  Euclidean distance to nearest TRAIN point in the scaled Magpie
+  feature space. Do not substitute the Mahalanobis dedup distance;
+  they are different quantities and mixing them reintroduces the
+  space-mismatch class of bug from the earlier work.

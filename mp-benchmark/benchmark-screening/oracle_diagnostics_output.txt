@@ -1,0 +1,45 @@
+======================================================================
+  ORACLE DIAGNOSTICS — is R2=0.43 good enough to build on?
+======================================================================
+  compositions: 1827   G: 0-529 mean 48 GPa
+
+  Featurizing (Magpie)...
+
+  ------------------------------------------------------------------
+  Q1/Q2 — value accuracy (R2/MAE) AND ranking (Spearman)
+  ------------------------------------------------------------------
+    model                     R2      MAE   Spearman
+    RandomForest           0.462     12.1      0.849
+    GradientBoost          0.446     13.2      0.827
+
+    Interpretation: for a BENCHMARK OBJECTIVE, Spearman is the
+    number that matters — it says the oracle ranks good candidates
+    above bad ones. Spearman >= 0.7 is a discriminating landscape
+    even when R2 is modest; the search can still be scored fairly.
+
+  ------------------------------------------------------------------
+  Q3 — ERROR vs DISTANCE FROM TRAINING (the confound check)
+  ------------------------------------------------------------------
+    Using best-ranking model: RandomForest
+    Spearman(distance_to_train, |error|) = +0.259
+
+    distance quartile          n  mean |error| GPa
+    Q1 (closest)             137               8.9
+    Q2                       137              10.9
+    Q3                       137              10.7
+    Q4 (farthest)            138              17.8
+
+    Interpretation:
+      ⚠ ERROR RISES WITH DISTANCE. Exploratory arms (LLM, digest)
+        will be scored more noisily than local arms (mutation) —
+        the Borg confound in a new dress. This must be addressed:
+        report it explicitly, restrict candidate novelty, or use
+        the dual-channel check to flag high-distance proposals.
+
+  ==================================================================
+  VERDICT
+  ==================================================================
+  BUILD WITH CARE. Ranking is fine but error rises with distance.
+  Address the confound before trusting exploratory-arm results.
+    best-ranking model: RandomForest (Spearman 0.849)
+    error-distance coupling: +0.259
